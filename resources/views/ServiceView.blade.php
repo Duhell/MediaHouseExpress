@@ -3,7 +3,6 @@
         <p class="font-['lexend'] text-[36px] text-[#333]">Our Services</p>
         <p class="font-['inter'] text-sm">We're here for OFWs, providing essential support and care abroad</p>
     </div>
-
     <div class="grid gap-y-12 place-items-center grid-cols-3">
         <div class="card shadow-xl rounded-lg flex flex-col items-center px-[22px] py-[45px]  w-[289px] h-[305px]">
             <div class="icon">
@@ -122,6 +121,5 @@
 
         </div>
     </div>
-
     @include('OtherServiceView')
 </section>

@@ -27,6 +27,7 @@
         @include('BenefitView')
         @include('OrganizationView')
         @include('ExistenceView')
+        @include('EpisodesView')
     </main>
 </body>
 </html>
