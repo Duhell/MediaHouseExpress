@@ -28,6 +28,8 @@
         @include('OrganizationView')
         @include('ExistenceView')
         @include('EpisodesView')
+        @include('TeamView')
+        @include('FooterView')
     </main>
 </body>
 </html>
