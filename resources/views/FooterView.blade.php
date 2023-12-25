@@ -1,4 +1,4 @@
-<footer class="bg-white mt-[80px]">
+<footer class="bg-white mt-[40px]">
     <div class="mx-auto max-w-screen-xl space-y-8 px-4 py-16 sm:px-6 lg:space-y-16 lg:px-8">
         <hr>
       <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
@@ -145,7 +145,7 @@
               </li>
 
               <li>
-                <a href="#" class="text-gray-700 transition hover:opacity-75"> form@gmail.com </a>
+                <a href="https://www.gmail.com" target="_blank" class="text-gray-700 transition hover:opacity-75"> Sab_princes@yahoo.com </a>
               </li>
 
               <li>
