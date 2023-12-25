@@ -1,11 +1,14 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./resources/**/*.blade.php"],
+  content: ["./resources/**/*.blade.php",
+            "./node_modules/flowbite/**/*.js"
+    ],
   theme: {
     extend: {},
   },
   plugins: [
-    require("daisyui")
+    require("daisyui"),
+    require('flowbite/plugin'),
   ],
   daisyui: {
     themes: false, // false: only light + dark | true: all themes | array: specific themes like this ["light", "dark", "cupcake"]

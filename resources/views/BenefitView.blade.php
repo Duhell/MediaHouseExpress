@@ -1,11 +1,11 @@
 <section class="w-full bg-[#F9F9F9]">
-    <div class="w-[1228px]  min-h-min mb-[56px] mx-auto mt-[120px]">
-        <div>
-            <p class="text-[32px] font-['lexend'] font-bold text-[#333]">Benefits we offer for OFW's</p>
-            <p class="text-[14px] font-['inter']">The purpose of OFW Serbisyo't Kooperatiba is to help and save lives even through the smallest amount of effort.</p>
+    <div class="lg:w-[1228px] w-full  min-h-min mb-[56px] mx-auto mt-[120px]">
+        <div class="px-5 md:px-0">
+            <p class="text-2xl md:text-[32px] font-['lexend'] font-bold text-[#333]">Benefits we offer for OFW's</p>
+            <p class="text-sm font-['inter']">The purpose of OFW Serbisyo't Kooperatiba is to help and save lives even through the smallest amount of effort.</p>
         </div>
-        <div class="grid  grid-cols-2">
-            <div class="w-[372px] h-auto">
+        <div class="grid grid-cols-1 px-5 md:px-0  lg:grid-cols-2">
+            <div class="md:w-[372px] w-full h-auto">
                 <img class="w-full h-full" src="{{ asset('images/Audit-pana.png') }}" alt="">
             </div>
             <div class="flex mt-5 flex-col gap-y-6 justify-center">

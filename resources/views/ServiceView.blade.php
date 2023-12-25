@@ -1,10 +1,10 @@
-<section id="services" class="w-[1228px] min-h-min mx-auto mt-[69px]">
-    <div class="text-center mb-[73px]">
-        <p class="font-['lexend'] text-[36px] text-[#333]">Our Services</p>
-        <p class="font-['inter'] text-sm">We're here for OFWs, providing essential support and care abroad</p>
+<section id="services" class="md:w-[1228px] w-full min-h-min mx-auto mt-[36px] md:mt-[69px]">
+    <div class="text-center mb-[48px] md:mb-[73px]">
+        <p class="font-['lexend'] text-[24px] md:text-[36px] text-[#333]">Our Services</p>
+        <p class="font-['inter'] text-xs md:text-sm">We're here for OFWs, providing essential support and care abroad</p>
     </div>
-    <div class="grid gap-y-12 place-items-center grid-cols-3">
-        <div class="card shadow-xl rounded-lg flex flex-col items-center px-[22px] py-[45px]  w-[289px] h-[305px]">
+    <div class="grid gap-y-5 md:gap-y-12 place-items-center grid-cols-1 lg:grid-cols-3">
+        <div class="card shadow-xl rounded-lg flex flex-col items-center px-[22px] py-[24px] md:py-[45px] w-full md:w-[289px] h-auto md:h-[305px]">
             <div class="icon">
                 <svg width="66" height="72" viewBox="0 0 66 72" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M60.3639 35.67V38.34C60.3639 49.02 57.9221 51.66 48.182 51.66H17.6724C7.93238 51.66 5.49051 48.99 5.49051 38.34V19.32C5.49051 8.67 7.93238 6 17.6724 6H21.9525" stroke="#292D32" stroke-width="3.75" stroke-linecap="round" stroke-linejoin="round"/>
@@ -22,7 +22,7 @@
 
         </div>
 
-        <div class="card  rounded-lg flex flex-col items-center px-[22px] py-[45px]  w-[289px] h-[305px]">
+        <div class="card  rounded-lg flex flex-col items-center px-[22px] py-[24px] md:py-[45px] w-full md:w-[289px] h-auto md:h-[305px]">
             <div class="icon">
                 <svg width="72" height="74" viewBox="0 0 72 74" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_38_226)">
@@ -47,7 +47,7 @@
 
         </div>
 
-        <div class="card  rounded-lg flex flex-col items-center px-[22px] py-[45px]  w-[289px] h-[305px]">
+        <div class="card  rounded-lg flex flex-col items-center px-[22px] py-[24px] md:py-[45px] w-full md:w-[289px] h-auto md:h-[305px]">
             <div class="icon">
                 <svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_38_254)">
@@ -71,7 +71,7 @@
 
         </div>
 
-        <div class="card  rounded-lg flex flex-col items-center px-[22px] py-[45px]  w-[289px] h-[305px]">
+        <div class="card  rounded-lg flex flex-col items-center px-[22px] py-[24px] md:py-[45px] w-full md:w-[289px] h-auto md:h-[305px]">
             <div class="icon">
                 <svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M31.47 6.69018L16.5001 12.3302C13.0501 13.6202 10.2301 17.7002 10.2301 21.3602V43.6503C10.2301 47.1903 12.5701 51.8403 15.4201 53.9703L28.3201 63.6003C32.55 66.7803 39.51 66.7803 43.74 63.6003L56.64 53.9703C59.49 51.8403 61.83 47.1903 61.83 43.6503V21.3602C61.83 17.6702 59.01 13.5902 55.56 12.3002L40.59 6.69018C38.04 5.76018 33.96 5.76018 31.47 6.69018Z" stroke="#292D32" stroke-width="3.75" stroke-linecap="round" stroke-linejoin="round"/>
@@ -85,7 +85,7 @@
 
         </div>
 
-        <div class="card  rounded-lg flex flex-col items-center px-[22px] py-[45px]  w-[289px] h-[305px]">
+        <div class="card  rounded-lg flex flex-col items-center px-[22px] py-[24px] md:py-[45px] w-full md:w-[289px] h-auto md:h-[305px]">
             <div class="icon">
                 <svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M14.4 17.2688H30.4313V36.45H14.4V17.2688ZM36.7875 17.2688H49.6125V20.475H36.7875V17.2688ZM36.7875 33.3H49.6125V36.5063H36.7875V33.3ZM36.7875 25.2563H49.6125V28.4625H36.7875V25.2563ZM14.4 41.4H49.5563V44.6063H14.4V41.4ZM14.4 57.0375H49.5563V60.2438H14.4V57.0375ZM14.4 48.9938H49.5563V52.2H14.4V48.9938ZM13.5 0.900024V7.03128H6.4125V71.2688H58.5V65.1375H65.5875V0.900024H13.5ZM55.2938 68.1188H9.5625V10.1813H13.5H16.7063H55.2938V61.875V65.0813V68.1188ZM62.4375 61.9313H58.5V6.97503H16.7063V4.10628H62.4375V61.9313Z" fill="black"/>
@@ -98,7 +98,7 @@
 
         </div>
 
-        <div class="card shadow-xl  rounded-lg flex flex-col items-center px-[22px] py-[45px]  w-[289px] h-[305px]">
+        <div class="card shadow-xl  rounded-lg flex flex-col items-center px-[22px] py-[24px] md:py-[45px] w-full md:w-[289px] h-auto md:h-[305px]">
             <div class="icon">
                 <svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_38_354)">

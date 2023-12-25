@@ -31,5 +31,6 @@
         @include('TeamView')
         @include('FooterView')
     </main>
+    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
 </body>
 </html>

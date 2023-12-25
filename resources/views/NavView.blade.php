@@ -1,5 +1,5 @@
-<nav class="py-3 z-50  absolute top-0  w-full bg-transparent transition-all duration-300">
-    <div class="w-[1228px] flex justify-between items-center mx-auto">
+<nav class="py-3 px-5 md:px-0 z-50  absolute top-0  w-full bg-transparent transition-all duration-300">
+    <div class="md:w-[1228px] w-full flex justify-between items-center mx-auto">
         <div class="w-20 h-20">
             <img class="w-full h-full" src="{{ asset('images/logo.webp') }}" alt="Logo">
         </div>

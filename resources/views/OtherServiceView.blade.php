@@ -1,10 +1,10 @@
-<section class="w-[1228px] px-[76px] mx-auto mt-[127px]">
-    <div class="text-center mb-[73px]">
-        <p class="font-['lexend'] text-[36px] text-[#333]">Other Services</p>
-        <p class="font-['inter'] text-sm">We provide essential support for OFWs abroad</p>
+<section class="md:w-[1228px] w-full px-[76px] mx-auto mt-[60px] md:mt-[127px]">
+    <div class="text-center mb-[46px] md:mb-[73px]">
+        <p class="font-['lexend'] text-2xl md:text-[36px] text-[#333]">Other Services</p>
+        <p class="font-['inter'] text-xs md:text-sm">We provide essential support for OFWs abroad</p>
     </div>
 
-    <div class="grid gap-y-[58px] place-items-center grid-cols-2">
+    <div class="grid gap-y-[58px] place-items-center grid-cols-1 lg:grid-cols-2">
         <div class="longCard  w-full flex gap-x-5 items-center">
             <div class="icon">
                 <svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">

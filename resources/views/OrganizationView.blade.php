@@ -1,9 +1,9 @@
-<section id="about" class="w-[1228px] min-h-min mx-auto ">
+<section id="about" class="md:w-[1228px] w-full min-h-min mx-auto ">
     <div>
-        <p class="text-[32px] relative after:content-[''] after:h-[3px] after:bottom-[-30px] after:left-[25%] after: after:absolute after:border-b after:w-[535px] after:bg-[#333] text-center font-['lexend'] underline underline-offset-[20px] font-bold text-[#333]">What is this organization and what is this for?</p>
+        <p class="text-2xl md:text-[32px] relative after:content-['']  after:h-[3px] after:bottom-[-30px] after:left-[25%] after: after:hidden md:after:block after:absolute after:border-b after:w-[535px] after:bg-[#333] text-center font-['lexend'] no-underline md:underline underline-offset-[20px] font-bold text-[#333]">What is this organization and what is this for?</p>
     </div>
-    <div class="grid grid-rows-4 gap-y-8 grid-cols-1 mt-[101px]">
-        <div class="flex items-center gap-x-5">
+    <div class="grid px-5 md:px-0 grid-rows-4 gap-y-8 grid-cols-1 mt-[50px] md:mt-[101px]">
+        <div class="flex flex-col md:flex-row gap-y-3 md:gap-y-0 items-center md:gap-x-5">
             <div class="w-[80px]  h-auto">
                 <img class="w-full h-full" src="{{ asset('images/logo.webp') }}" alt="Logo">
             </div>
@@ -12,7 +12,7 @@
             </div>
         </div>
 
-        <div class="flex items-center gap-x-5">
+        <div class="flex flex-col md:flex-row gap-y-3 md:gap-y-0 items-center md:gap-x-5">
             <div class="w-[80px]  h-auto">
                 <img class="w-full h-full" src="{{ asset('images/republika_ng_pilipinas.webp') }}" alt="Republic">
             </div>
@@ -21,7 +21,7 @@
             </div>
         </div>
 
-        <div class="flex items-center gap-x-5">
+        <div class="flex flex-col md:flex-row gap-y-3 md:gap-y-0 items-center md:gap-x-5">
             <div class="w-[80px]  h-auto">
                 <img class="w-full h-full" src="{{ asset('images/dole.webp') }}" alt="Dole">
             </div>
@@ -30,7 +30,7 @@
             </div>
         </div>
 
-        <div class="flex items-center gap-x-5">
+        <div class="flex flex-col md:flex-row gap-y-3 md:gap-y-0 items-center md:gap-x-5">
             <div class="w-[80px]  h-auto">
                 <img class="w-full h-full" src="{{ asset('images/owwa.webp') }}" alt="Logo">
             </div>
