@@ -12,7 +12,11 @@
                 <li><a href="/#services">Services</a></li>
                 <li><a href="/#about">About</a></li>
                 <li><a href="/#team">Team</a></li>
-                <li><a href="/contact">Contact</a></li>
+                <li><a href="{{ route('contact') }}">Contact</a></li>
+                <li><a href="{{ route('contact') }}">Tabang/Tulong</a></li>
+                @auth
+                <li><a href="{{ route('dashboard') }}">Dashboard</a></li>
+                @endauth
             </ul>
           </div>
 
@@ -24,11 +28,15 @@
             <li>
                 <div class="dropdown">
                     <div tabindex="0" role="button" class="">Help Centre</div>
-                    <ul tabindex="0" class="dropdown-content z-[1] text-black menu p-2 shadow bg-white rounded-box w-32">
+                    <ul tabindex="0" class="dropdown-content z-[1] text-black menu p-2 shadow bg-white rounded-box min-w-min">
                       <li><a href="{{ route('contact') }}">Contact</a></li>
+                      <li><a href="{{ route('contact') }}">Tabang/Tulong</a></li>
                     </ul>
                   </div>
             </li>
+            @auth
+            <li><a href="{{ route('dashboard') }}">Dashboard</a></li>
+            @endauth
         </ul>
     </div>
 </nav>

@@ -20,15 +20,18 @@
     </style>
     @vite('resources/css/app.css')
 </head>
-<body class="relative">
-    @if (!Request::is('admin/login'))
-    @include('NavView')
-    @endif
-    <main class="relative">
-        @yield('contents')
+<body class="relative flex">
+    @include('admin.parts.sidemenu')
+    <main class="grow">
+        <div id="loading_state" class="fixed z-10 flex justify-center items-center inset-0 bg-slate-100">
+            <span class="loading loading-bars loading-lg"></span>
+        </div>
+        @yield('AdminContents')
     </main>
-    @if (!Request::is('admin/login'))
-    @include('FooterView')
-    @endif
+    <script>
+        window.addEventListener('DOMContentLoaded',()=>{
+            document.getElementById('loading_state').style.display = "none"
+        })
+    </script>
 </body>
 </html>
