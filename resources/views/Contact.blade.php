@@ -29,6 +29,7 @@
             <div>
               <label class="sr-only" for="name">Name</label>
               <input
+                style="border:1px solid rgba(0,0,0,0.6);"
                 class="w-full rounded-lg border-gray-200 p-3 text-sm"
                 placeholder="Name"
                 type="text"
@@ -40,6 +41,7 @@
               <div>
                 <label class="sr-only" for="email">Email</label>
                 <input
+                  style="border:1px solid rgba(0,0,0,0.6);"
                   class="w-full rounded-lg border-gray-200 p-3 text-sm"
                   placeholder="Email address"
                   type="email"
@@ -50,6 +52,7 @@
               <div>
                 <label class="sr-only" for="phone">Phone</label>
                 <input
+                  style="border:1px solid rgba(0,0,0,0.6);"
                   class="w-full rounded-lg border-gray-200 p-3 text-sm"
                   placeholder="Phone Number"
                   type="tel"
@@ -62,6 +65,7 @@
               <label class="sr-only" for="message">Message</label>
 
               <textarea
+                style="border:1px solid rgba(0,0,0,0.6);"
                 class="w-full rounded-lg border-gray-200 p-3 text-sm"
                 placeholder="Message"
                 rows="8"
@@ -81,4 +85,5 @@
       </div>
     </div>
   </section>
+
 @endsection

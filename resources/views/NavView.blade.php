@@ -13,7 +13,7 @@
                 <li><a href="/#about">About</a></li>
                 <li><a href="/#team">Team</a></li>
                 <li><a href="{{ route('contact') }}">Contact</a></li>
-                <li><a href="{{ route('contact') }}">Tabang/Tulong</a></li>
+                <li><a href="{{ route('tabang_tulong') }}">Tabang/Tulong</a></li>
                 @auth
                 <li><a href="{{ route('dashboard') }}">Dashboard</a></li>
                 @endauth
@@ -30,7 +30,7 @@
                     <div tabindex="0" role="button" class="">Help Centre</div>
                     <ul tabindex="0" class="dropdown-content z-[1] text-black menu p-2 shadow bg-white rounded-box min-w-min">
                       <li><a href="{{ route('contact') }}">Contact</a></li>
-                      <li><a href="{{ route('contact') }}">Tabang/Tulong</a></li>
+                      <li><a href="{{ route('tabang_tulong') }}">Tabang/Tulong</a></li>
                     </ul>
                   </div>
             </li>
