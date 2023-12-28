@@ -1,6 +1,6 @@
 <section class="md:w-[1228px] w-full px-5 md:px-0  mx-auto mt-[50px] md:mt-[100px]  py-6 h-[1300px] md:h-auto">
     <div class="flex flex-wrap gap-y-3 md:gap-0 mb-[56px] justify-between">
-        <div>
+        <div data-aos="fade-right">
             <p class="font-['lexend'] text-2xl md:text-[32px] md:w-[440px] w-full font-bold">Provide Protection and Support for OFW's Worldwide</p><br>
             <p class="font-['inter'] text-base md:w-[628px] w-full font-normal">Explore Our Journey and Stay Connected with the Latest Developments in Our Ongoing Mission to Safeguard and Empower Overseas Filipino Workers (OFWs) Across the Globe.</p>
         </div>

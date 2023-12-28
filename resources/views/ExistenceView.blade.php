@@ -1,10 +1,10 @@
 <section class="w-full bg-[#F9F9F9]">
     <div class="md:w-[1228px] w-full md:py-5 min-h-min mx-auto mt-[60px] md:mt-[120px]">
         <div class="grid  place-items-center gap-x-7 grid-cols-1 md:grid-cols-2">
-            <div class="md:w-[455px] w-full  h-[317px]">
+            <div data-aos="fade-up" class="md:w-[455px] w-full  h-[317px]">
                 <img class="w-full h-full" src="{{ asset('images/undraw_Questions_re_1fy7__1_-removebg-preview.png') }}" alt="Why?">
             </div>
-            <div>
+            <div data-aos="fade-left">
                 <div class="mt-4">
                     <p class="text-2xl md:text-[36px] text-center font-['lexend'] font-normal text-[#333]">Why does it exist?</p>
                 </div>

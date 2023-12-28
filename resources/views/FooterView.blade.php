@@ -145,7 +145,7 @@
               </li>
 
               <li>
-                <a href="https://www.gmail.com" target="_blank" class="text-gray-700 transition hover:opacity-75"> Sab_princes@yahoo.com </a>
+                <a href="mailto:Sab_princes@yahoo.com" target="_blank" class="text-gray-700 transition hover:opacity-75"> Sab_princes@yahoo.com </a>
               </li>
 
               <li>

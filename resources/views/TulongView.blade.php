@@ -8,12 +8,12 @@
         </div>
     @endif
     @if ($errors->any())
-        <div id="err" class="toast font-['inter'] text-sm z-50 toast-top toast-center">
-            @foreach ($errors->all() as $error)
-                <div class="alert text-white alert-error">
-                    <span>{{ $error }}</span>
-                </div>
-            @endforeach
+        <div id="err" class="toast font-['inter'] text-sm z-50 toast-end">
+            <div class="alert flex flex-col text-white alert-error">
+                @foreach ($errors->all() as $error)
+                    <span class="w-full">{{ $loop->iteration }}. {{ $error }}</span>
+                @endforeach
+            </div>
         </div>
     @endif
     <dialog id="my_modal_4" class="modal font-['inter']">

@@ -1,4 +1,4 @@
-<section id="team" class="md:w-[1228px] w-full  min-h-min mx-auto mt-[100px] ">
+<section data-aos="fade-up" id="team" class="md:w-[1228px] w-full  min-h-min mx-auto mt-[100px] ">
     <div class="w-full text-center font-['lexend'] text-2xl md:text-[32px] font-bold">
         <p>Meet the Team</p>
     </div>

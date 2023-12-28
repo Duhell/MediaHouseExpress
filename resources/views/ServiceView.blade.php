@@ -1,9 +1,9 @@
 <section id="services" class="md:w-[1228px] w-full min-h-min mx-auto mt-[36px] md:mt-[69px]">
-    <div class="text-center mb-[48px] md:mb-[73px]">
+    <div data-aos="fade-up" class="text-center mb-[48px] md:mb-[73px]">
         <p class="font-['lexend'] text-[24px] md:text-[36px] text-[#333]">Our Services</p>
         <p class="font-['inter'] text-xs md:text-sm">We're here for OFWs, providing essential support and care abroad</p>
     </div>
-    <div class="grid gap-y-5 md:gap-y-12 place-items-center grid-cols-1 lg:grid-cols-3">
+    <div data-aos="fade-up" class="grid gap-y-5 md:gap-y-12 place-items-center grid-cols-1 lg:grid-cols-3">
         <div class="card shadow-xl rounded-lg flex flex-col items-center px-[22px] py-[24px] md:py-[45px] w-full md:w-[289px] h-auto md:h-[305px]">
             <div class="icon">
                 <svg width="66" height="72" viewBox="0 0 66 72" fill="none" xmlns="http://www.w3.org/2000/svg">
