@@ -10,6 +10,7 @@ class Inbox extends Model
         'Name',
         'EmailAddress',
         'PhoneNumber',
-        'Message'
+        'Message',
+        'Location'
     ];
 }

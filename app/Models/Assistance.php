@@ -24,6 +24,7 @@ class Assistance extends Model
             'RecruitmentAgencySaudi',
             'RecruitmentAgencyPhilippines',
             'Complaint',
+            'Location',
             'File_1',
             'File_2',
             'File_3',

@@ -11,13 +11,11 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('inboxes', function (Blueprint $table) {
+        Schema::create('visits', function (Blueprint $table) {
             $table->id();
-            $table->string('Name')->nullable()->default('Unknown');
-            $table->string('EmailAddress');
-            $table->string('PhoneNumber');
-            $table->text('Message');
-            $table->string('Location');
+            $table->string('ip_address')->nullable();
+            $table->string('user_agent')->nullable();
+            $table->string('country')->nullable();
             $table->timestamps();
         });
     }
@@ -27,6 +25,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('inboxes');
+        Schema::dropIfExists('visits');
     }
 };

@@ -1,23 +1,20 @@
 @extends('admin.parts.layout')
 @section('AdminContents')
     <div class="bg-slate-50 w-full h-screen">
-        {{-- <div class=" w-full md:p-5 font-['lexend'] text-2xl">
-            <p>Dashboard</p>
-        </div> --}}
         <div class="md:p-5 min-h-min font-['lexend']  w-full flex flex-wrap md:gap-x-6">
             <div class="stats shadow grow">
 
                 <div class="stat">
-                  <div class="stat-title">Welcome Admin</div>
+                  <div class="stat-title">Welcome {{ Auth::user()->name }}</div>
                   <div class="stat-value">Dashboard</div>
                 </div>
             </div>
             <div class="stats shadow">
 
                 <div class="stat">
-                  <div class="stat-title">Total Users</div>
-                  <div class="stat-value">89</div>
-                  <div class="stat-desc">20 users today</div>
+                  <div class="stat-title">Total Forms</div>
+                  <div class="stat-value">{{ $assistance }}</div>
+                  <div class="stat-desc">{{ $todayAssistance }}  {{ $todayAssistance > 1 ? "new forms":"form" }} today</div>
                 </div>
 
             </div>
@@ -25,9 +22,9 @@
             <div class="stats shadow">
 
                 <div class="stat">
-                  <div class="stat-title">Total Message</div>
-                  <div class="stat-value">100</div>
-                  <div class="stat-desc">30 new messages today</div>
+                  <div class="stat-title">Total Messages</div>
+                  <div class="stat-value">{{ $messages }}</div>
+                  <div class="stat-desc">{{ $todayMessages }}  {{ $todayMessages > 1 ? "new messages":"message" }} today</div>
                 </div>
 
             </div>
@@ -36,8 +33,8 @@
 
                 <div class="stat">
                   <div class="stat-title">Total Page Views</div>
-                  <div class="stat-value">89,400</div>
-                  <div class="stat-desc">21% more than last month</div>
+                  <div class="stat-value">{{ $visitors }}</div>
+                  <div class="stat-desc">{{ $percent }}% {{ $percent < 0 ? "decrease":"increase" }} than last month</div>
                 </div>
 
             </div>
@@ -50,29 +47,29 @@
                   <thead>
                     <tr>
                       <th></th>
-                      <th>Name</th>
+                      <th>IP Address</th>
+                      <th>User Agent</th>
                       <th>Country</th>
-                      <th>Date</th>
+                      <th>Date Visited</th>
                     </tr>
                   </thead>
                   <tbody>
-                    <!-- row 1 -->
-                    @php
-                        $users = ['Ryan','Villarma','Templa']
-                    @endphp
-                    @forelse ($users as $user)
-                        <tr class="hover">
+                    @forelse ($paginatedVisitors as $visitor)
+                        <tr>
                             <th>{{ $loop->iteration }}</th>
-                            <td>{{ $user }}</td>
-                            <td>PH</td>
-                            <td>Dec. 26, 2023 </td>
+                            <td>{{ $visitor->ip_address }}</td>
+                            <td>{{ $visitor->user_agent }}</td>
+                            <td>{{ $visitor->country }}</td>
+                            <td>{{ date('M d, Y',strtotime($visitor->created_at)) }}</td>
                         </tr>
                     @empty
                         <tr>No Visitors</tr>
                     @endforelse
-
                   </tbody>
                 </table>
+                <div class="max-w-[200px] mx-auto mt-6 ">
+                    {{ $paginatedVisitors->links('pagination::simple-tailwind') }}
+                </div>
               </div>
         </div>
     </div>

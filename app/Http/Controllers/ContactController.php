@@ -22,6 +22,7 @@ class ContactController extends Controller
             $validatedData = $request->validated();
             $message = new Inbox;
             $message->fill($validatedData);
+            $message->Location = session()->get('Country');
             $message->save();
             return back()->with(['success' => 'Message sent!']);
         }catch(Exception $error){
@@ -70,11 +71,14 @@ class ContactController extends Controller
                 $assistance->File_3 = $FilePath;
             }
 
-            $fields = ['FirstName', 'MiddleName', 'LastName', 'PassportNumber', 'SaudiResidenceID', 'Gender', 'EmailOrFacebook', 'Occupation', 'PersonalTele', 'OtherTele', 'LocationKSA', 'EmployerName', 'EmployerTele', 'RecruitmentAgencySaudi', 'RecruitmentAgencyPhilippines', 'Complaint'];
+            $fields = ['FirstName', 'MiddleName', 'LastName', 'PassportNumber', 'SaudiResidenceID', 'Gender', 'EmailOrFacebook', 'Occupation', 'PersonalTele', 'OtherTele', 'LocationKSA', 'EmployerName', 'EmployerTele', 'RecruitmentAgencySaudi', 'RecruitmentAgencyPhilippines', 'Complaint','Location'];
 
             foreach ($fields as $field) {
                 if (isset($validatedData[$field])) {
                     $assistance->$field = $validatedData[$field];
+                }
+                if($field == "Location"){
+                    $assistance->$field = session()->get('Country');
                 }
             }
             $assistance->save();

@@ -1,14 +1,14 @@
 @extends('Main.main')
 @section('contents')
     @if (session('success'))
-        <div id="success" class="toast font-['inter'] toast-top toast-center">
+        <div id="success" class="toast z-50 font-['inter'] toast-top toast-center">
             <div class="alert text-white alert-success">
                 <span>{{ session('success') }}</span>
             </div>
         </div>
     @endif
     @if ($errors->any())
-        <div id="err" class="toast font-['inter'] text-sm z-50 toast-end">
+        <div id="err" class="toast z-50 font-['inter'] text-sm z-50 toast-end">
             <div class="alert flex flex-col text-white alert-error">
                 @foreach ($errors->all() as $error)
                     <span class="w-full">{{ $loop->iteration }}. {{ $error }}</span>
