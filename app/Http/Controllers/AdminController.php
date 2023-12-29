@@ -2,10 +2,12 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Assistance;
+use Exception;
 use App\Models\Inbox;
 use App\Models\Visit;
+use App\Models\Assistance;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Auth;
 
 class AdminController extends Controller
@@ -89,8 +91,61 @@ class AdminController extends Controller
     //===================== END DASHBOARD ==================================//
 
     //===================== INBOX ==================================//
-    public function inbox(){
-        return view('admin.inbox');
+    public function inbox(Request $request){
+        if ($request->ajax()) {
+            if ($request->sort == "all") {
+                return view('admin.tables.Messages', ['Messages' => Inbox::orderBy('created_at', 'desc')->get()]);
+            }
+
+            if ($request->sort == "read") {
+                return view('admin.tables.Messages', ['Messages' => Inbox::where('isRead', 1)->orderBy('created_at', 'desc')->get()]);
+            }
+
+            if ($request->sort == "unread") {
+                return view('admin.tables.Messages', ['Messages' => Inbox::where('isRead', 0)->orderBy('created_at', 'desc')->get()]);
+            }
+
+            if($request->input){
+                $searchTerm = $request->input;
+                $searchResults = Inbox::where('Name','like','%'. $searchTerm. '%')->orderBy('created_at','desc')->get();
+                return view('admin.tables.Messages', ['Messages' => $searchResults]);
+            }
+
+
+            if($request->id){
+                $data = Inbox::where('id',$request->id)->first();
+                if($data->isRead == 0){
+                    $data->isRead = 1;
+                    $data->save();
+                }
+                return view('admin.tables.TheMessage',compact('data'));
+            }
+        }else{
+            return view('admin.inbox');
+        }
+    }
+
+    public function mark_and_delete(Request $request){
+        if($request->ajax()){
+            try{
+                if($request->mark_id){
+                    $message = Inbox::find($request->mark_id);
+                    $message->isRead = !$request->mark_bool;
+                    $message->save();
+                    return response()->json('Done');
+                }
+                if($request->delete_id){
+                    $message = Inbox::find($request->delete_id);
+                    $message->delete();
+                    return response()->json('Message Deleted');
+                }
+            }catch(Exception $error){
+                Log::error($error->getMessage(), [
+                    'line' => $error->getLine(),
+                    'file' => $error->getFile()
+                ]);
+            }
+        }
     }
 
     //===================== END INBOX ==================================//

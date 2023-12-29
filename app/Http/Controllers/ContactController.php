@@ -18,6 +18,7 @@ class ContactController extends Controller
     }
 
     public function send_contact(ContactRequest $request){
+        //date_default_timezone_set('Asia/Manila');
         try{
             $validatedData = $request->validated();
             $message = new Inbox;

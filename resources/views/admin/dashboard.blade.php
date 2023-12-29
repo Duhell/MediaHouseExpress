@@ -39,9 +39,9 @@
 
             </div>
         </div>
-        <div class="md:mt-8 md:p-5 font-['inter']">
-            <p class="px-5 font-bold text-lg">Page Vistors</p>
-            <div class="overflow-x-auto md:mt-3">
+        <div class="md:mt-8  md:p-5 font-['inter']">
+            <div class="overflow-x-auto bg-white rounded-md md:mt-3">
+                <p class="px-5 font-bold p-5  text-lg">Page Vistors</p>
                 <table class="table">
                   <!-- head -->
                   <thead>
@@ -63,14 +63,14 @@
                             <td>{{ date('M d, Y',strtotime($visitor->created_at)) }}</td>
                         </tr>
                     @empty
-                        <tr>No Visitors</tr>
+                        <tr><th colspan="12" class="text-center">No visitors</th></tr>
                     @endforelse
                   </tbody>
                 </table>
                 <div class="max-w-[200px] mx-auto mt-6 ">
                     {{ $paginatedVisitors->links('pagination::simple-tailwind') }}
                 </div>
-              </div>
+            </div>
         </div>
     </div>
 @endsection
