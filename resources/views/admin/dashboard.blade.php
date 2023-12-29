@@ -1,12 +1,11 @@
 @extends('admin.parts.layout')
 @section('AdminContents')
-    <div class="bg-slate-50 w-full h-screen">
-        <div class="md:p-5 min-h-min font-['lexend']  w-full flex flex-wrap md:gap-x-6">
+    <div class="bg-slate-50 overflow-y-auto w-full h-screen">
+        <div class="p-1 md:p-5 min-h-min font-['lexend']  w-full grid grid-cols-1 md:flex md:flex-wrap gap-x-0 gap-y-3 md:gap-y-0 md:gap-x-6">
             <div class="stats shadow grow">
-
                 <div class="stat">
-                  <div class="stat-title">Welcome {{ Auth::user()->name }}</div>
-                  <div class="stat-value">Dashboard</div>
+                  <div class="stat-title text-xs md:text-base ">Welcome {{ Auth::user()->name }}</div>
+                  <div class="stat-value text-[#3f3e3e]">Dashboard</div>
                 </div>
             </div>
             <div class="stats shadow">
@@ -39,7 +38,7 @@
 
             </div>
         </div>
-        <div class="md:mt-8  md:p-5 font-['inter']">
+        <div class="  md:p-5 font-['inter']">
             <div class="overflow-x-auto bg-white rounded-md md:mt-3">
                 <p class="px-5 font-bold p-5  text-lg">Page Vistors</p>
                 <table class="table">

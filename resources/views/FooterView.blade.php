@@ -88,23 +88,23 @@
               </li>
 
               <li>
-                <a href="#" class="text-gray-700 transition hover:opacity-75"> Service </a>
+                <a href="#services" class="text-gray-700 transition hover:opacity-75"> Service </a>
               </li>
 
               <li>
-                <a href="#" class="text-gray-700 transition hover:opacity-75"> Benefits</a>
+                <a href="#benefits" class="text-gray-700 transition hover:opacity-75"> Benefits</a>
               </li>
 
               <li>
-                <a href="#" class="text-gray-700 transition hover:opacity-75"> Organization </a>
+                <a href="#about" class="text-gray-700 transition hover:opacity-75"> Organization </a>
               </li>
 
               <li>
-                <a href="#" class="text-gray-700 transition hover:opacity-75"> Videos </a>
+                <a href="#episodes" class="text-gray-700 transition hover:opacity-75"> Videos </a>
               </li>
 
               <li>
-                <a href="#" class="text-gray-700 transition hover:opacity-75"> Meet the Team </a>
+                <a href="#team" class="text-gray-700 transition hover:opacity-75"> Meet the Team </a>
               </li>
 
             </ul>
@@ -115,23 +115,23 @@
 
             <ul class="mt-6 space-y-4 text-sm">
               <li>
-                <a href="#" class="text-gray-700 transition hover:opacity-75"> Rescue Mission </a>
+                <a href="#services" class="text-gray-700 transition hover:opacity-75"> Rescue Mission </a>
               </li>
 
               <li>
-                <a href="#" class="text-gray-700 transition hover:opacity-75"> Protection among OFW’s </a>
+                <a href="#services" class="text-gray-700 transition hover:opacity-75"> Protection among OFW’s </a>
               </li>
 
               <li>
-                <a href="#" class="text-gray-700 transition hover:opacity-75"> Monitoring  </a>
+                <a href="#services" class="text-gray-700 transition hover:opacity-75"> Monitoring  </a>
               </li>
 
               <li>
-                <a href="#" class="text-gray-700 transition hover:opacity-75"> 24/7 Hotline  </a>
+                <a href="#services" class="text-gray-700 transition hover:opacity-75"> 24/7 Hotline  </a>
               </li>
 
               <li>
-                <a href="#" class="text-gray-700 transition hover:opacity-75"> Social Welfare  </a>
+                <a href="#services" class="text-gray-700 transition hover:opacity-75"> Social Welfare  </a>
               </li>
             </ul>
           </div>
@@ -149,7 +149,7 @@
               </li>
 
               <li>
-                <a href="#" class="text-gray-700 transition hover:opacity-75">+639182550953 </a>
+                <a href="tel:+639182550953" class="text-gray-700 transition hover:opacity-75">+639182550953 </a>
               </li>
 
             </ul>
@@ -159,7 +159,7 @@
 
       <p class="text-xs text-gray-500">&copy; 2023. Media House Express. All rights reserved.</p>
       <hr>
-      <p class="text-xs text-center text-gray-500">Designed & Developed by <a href="#">Yaramay</a></p>
+      <p class="text-xs text-center text-gray-500">Designed & Developed by <a target="_blank" href="https://yaramay.com/">Yaramay</a></p>
 
     </div>
   </footer>

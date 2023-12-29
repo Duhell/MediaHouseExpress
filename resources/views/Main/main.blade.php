@@ -24,7 +24,7 @@
     @vite('resources/css/app.css')
 </head>
 
-<body class="relative">
+<body class="relative overflow-x-hidden">
     @if (!Request::is('admin/login'))
         @include('NavView')
     @endif

@@ -16,7 +16,7 @@
 
       <div class="grid grid-cols-1 gap-1 py-3 sm:grid-cols-3 sm:gap-4">
         <dt class="font-medium text-gray-900">Email</dt>
-        <dd class="text-gray-700 sm:col-span-2">{{ $data->EmailAddress }}</dd>
+        <dd class="text-gray-700 sm:col-span-2"><a href="mailto:{{ $data->EmailAddress }}">{{ $data->EmailAddress }}</a></dd>
       </div>
 
 

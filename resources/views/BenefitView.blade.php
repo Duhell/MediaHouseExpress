@@ -1,4 +1,4 @@
-<section class="w-full bg-[#F9F9F9]">
+<section id="benefits" class="w-full bg-[#F9F9F9]">
     <div class="lg:w-[1228px] w-full  min-h-min mb-[56px] mx-auto mt-[120px]">
         <div data-aos="fade-right" class="px-5 md:px-0">
             <p class="text-2xl md:text-[32px] font-['lexend'] font-bold text-[#333]">Benefits we offer for OFW's</p>

@@ -1,4 +1,4 @@
-<section class="md:w-[1228px] w-full px-5 md:px-0  mx-auto mt-[50px] md:mt-[100px]  py-6 h-[1300px] md:h-auto">
+<section id="episodes" class="md:w-[1228px] w-full px-5 md:px-0  mx-auto mt-[50px] md:mt-[100px]  py-6 h-[1300px] md:h-auto">
     <div class="flex flex-wrap gap-y-3 md:gap-0 mb-[56px] justify-between">
         <div data-aos="fade-right">
             <p class="font-['lexend'] text-2xl md:text-[32px] md:w-[440px] w-full font-bold">Provide Protection and Support for OFW's Worldwide</p><br>
