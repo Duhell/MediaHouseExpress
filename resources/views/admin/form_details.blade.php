@@ -127,7 +127,8 @@
                         </div>
                     </dl>
                 </div>
-                <div class="mt-3 flex justify-end">
+                <div class="mt-3 flex justify-end gap-x-3">
+                    <button class="inline-block rounded bg-indigo-600 px-4 py-2 text-xs font-medium text-white hover:bg-indigo-700" onclick="window.location.href='/admin/forms'">Back</button>
                     <button class="inline-block rounded bg-rose-600 px-4 py-2 text-xs font-medium text-white hover:bg-rose-700" onclick="deleteModal.showModal()">Delete</button>
                 </div>
             </div>

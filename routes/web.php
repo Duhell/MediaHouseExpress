@@ -17,3 +17,4 @@ Route::get('/admin/inbox',[\App\Http\Controllers\AdminController::class,'inbox']
 Route::post('/admin/inbox',[\App\Http\Controllers\AdminController::class,'mark_and_delete'])->middleware("auth");
 Route::get('/admin/forms/{formID?}/{delete?}',[\App\Http\Controllers\AdminController::class,'forms'])->middleware("auth")->name('forms');
 Route::get('/admin/account',[\App\Http\Controllers\AdminController::class,'account'])->middleware("auth")->name('account');
+Route::patch('/admin/account/{adminID}',[\App\Http\Controllers\AdminController::class,'updateAccount'])->middleware("auth")->name('updateAccount');

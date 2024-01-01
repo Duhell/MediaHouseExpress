@@ -3,12 +3,14 @@
 namespace App\Http\Controllers;
 
 use Exception;
+use App\Models\User;
 use App\Models\Inbox;
 use App\Models\Visit;
 use App\Models\Assistance;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
 
 class AdminController extends Controller
 {
@@ -174,6 +176,36 @@ class AdminController extends Controller
 
     public function account(){
         return view('admin.account');
+    }
+
+    public function updateAccount(Request $request ,User $adminID){
+        $validatedData = $request->validate([
+           'username'=> 'max:255',
+           'role'=> '',
+           'email'=> 'email',
+           'oldpass'=> 'nullable|min:8',
+           'password'=> 'nullable|min:8',
+        ]);
+
+        if($validatedData['password'] == null || $validatedData['oldpass'] == null ){
+            $adminID->name = $validatedData['username'];
+            $adminID->role = $validatedData['role'];
+            $adminID->email = $validatedData['email'];
+            $adminID->update();
+        }
+
+        if($request->filled('oldpass')){
+            if(!Hash::check($request->input('oldpass'),$adminID->password)){
+                return back()->withErrors(['password' => 'The old password is incorrect.']);
+            }
+        }
+
+        if ($request->filled('password')) {
+            $validatedData['password'] = Hash::make($validatedData['password']);
+            $adminID->update($validatedData);
+        }
+
+        return back()->with(['success'=>"Update successfully!"]);
     }
     //===================== END ACCOUNT ==================================//
 
