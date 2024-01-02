@@ -8,7 +8,7 @@
         </div>
     @endif
     @if ($errors->any())
-        <div id="err" class="toast z-50 font-['inter'] text-sm z-50 toast-end">
+        <div id="err" class="toast font-['inter'] text-sm z-50 toast-end">
             <div class="alert flex flex-col text-white alert-error">
                 @foreach ($errors->all() as $error)
                     <span class="w-full">{{ $loop->iteration }}. {{ $error }}</span>
@@ -18,7 +18,7 @@
     @endif
     <dialog id="my_modal_4" class="modal font-['inter']">
         <div class="modal-box w-11/12 max-w-5xl">
-            <h3 class="font-bold text-lg">Request for Assistance!</h3>
+            <h3 class="font-bold text-lg">Data Privacy and Usage Terms</h3>
             <p class="py-4">As much as possible please provide all information requested. The local government confirms
                 that all information given is for the use of the local government only and not to be disseminated or
                 distributed to private individuals or corporation.

@@ -21,20 +21,20 @@ class AdminController extends Controller
         return view('admin.login');
     }
 
-    public function login(Request $request){
+    public function login(Request $request)
+    {
         $validatedCredentials = $request->validate([
             'email' => 'required|email',
-            'password'=>'required|min:8'
+            'password' => 'required|min:8'
         ]);
 
-        if(Auth::attempt($validatedCredentials)){
+        if (Auth::attempt($validatedCredentials)) {
             return redirect()->route('dashboard');
         }
 
         return back()->withErrors([
-            'error'=> 'Wrong email or password!'
+            'error' => 'Wrong email or password!'
         ]);
-
     }
 
     public function logout()
@@ -55,13 +55,13 @@ class AdminController extends Controller
 
         //======= Visitors=======//
         $currentMonth = date('m');
-        $lastMonth = date('m',strtotime('last month'));
+        $lastMonth = date('m', strtotime('last month'));
         $totalVisits = Visit::count();
-        $paginatedVisitors = Visit::paginate(5);
-        $currentMonthVisitors = Visit::whereMonth('created_at',$currentMonth)->count();
-        $lastMonthVisitors = Visit::whereMonth('created_at',$lastMonth)->count();
+        $paginatedVisitors = Visit::orderBy('created_at','desc')->paginate(5);
+        $currentMonthVisitors = Visit::whereMonth('created_at', $currentMonth)->count();
+        $lastMonthVisitors = Visit::whereMonth('created_at', $lastMonth)->count();
         if ($lastMonthVisitors == 0) {
-            $percentageIncrease = number_format($currentMonthVisitors > 0 ? 100 : 0,1);
+            $percentageIncrease = number_format($currentMonthVisitors > 0 ? 100 : 0, 1);
         } else {
             $percentageIncrease = number_format(($currentMonthVisitors - $lastMonthVisitors) / $lastMonthVisitors * 100, 1);
         }
@@ -70,30 +70,31 @@ class AdminController extends Controller
         //======= Inbox ==========//
         $today = date('d');
         $totalMessages = Inbox::count();
-        $todayMessages = Inbox::whereDay('created_at',$today)->count();
+        $todayMessages = Inbox::whereDay('created_at', $today)->count();
         //======= End Inbox ==========//
 
         //======= Forms ===========//
         $totalForms = Assistance::count();
-        $todayForms = Assistance::whereDay('created_at',$today)->count();
+        $todayForms = Assistance::whereDay('created_at', $today)->count();
         //======= End Forms ========//
 
 
-        return view('admin.dashboard',[
-            'paginatedVisitors'=>$paginatedVisitors,
-            'visitors'=>$totalVisits,
-            'percent'=>$percentageIncrease,
-            'messages'=>$totalMessages,
-            'todayMessages'=>$todayMessages,
-            'assistance'=>$totalForms,
-            'todayAssistance'=>$todayForms
+        return view('admin.dashboard', [
+            'paginatedVisitors' => $paginatedVisitors,
+            'visitors' => $totalVisits,
+            'percent' => $percentageIncrease,
+            'messages' => $totalMessages,
+            'todayMessages' => $todayMessages,
+            'assistance' => $totalForms,
+            'todayAssistance' => $todayForms
         ]);
     }
 
     //===================== END DASHBOARD ==================================//
 
     //===================== INBOX ==================================//
-    public function inbox(Request $request){
+    public function inbox(Request $request)
+    {
         if ($request->ajax()) {
             if ($request->sort == "all") {
                 return view('admin.tables.Messages', ['Messages' => Inbox::orderBy('created_at', 'desc')->get()]);
@@ -107,41 +108,42 @@ class AdminController extends Controller
                 return view('admin.tables.Messages', ['Messages' => Inbox::where('isRead', 0)->orderBy('created_at', 'desc')->get()]);
             }
 
-            if($request->input){
+            if ($request->input) {
                 $searchTerm = $request->input;
-                $searchResults = Inbox::where('Name','like','%'. $searchTerm. '%')->orderBy('created_at','desc')->get();
+                $searchResults = Inbox::where('Name', 'like', '%' . $searchTerm . '%')->orderBy('created_at', 'desc')->get();
                 return view('admin.tables.Messages', ['Messages' => $searchResults]);
             }
 
 
-            if($request->id){
-                $data = Inbox::where('id',$request->id)->first();
-                if($data->isRead == 0){
+            if ($request->id) {
+                $data = Inbox::where('id', $request->id)->first();
+                if ($data->isRead == 0) {
                     $data->isRead = 1;
                     $data->save();
                 }
-                return view('admin.tables.TheMessage',compact('data'));
+                return view('admin.tables.TheMessage', compact('data'));
             }
-        }else{
+        } else {
             return view('admin.inbox');
         }
     }
 
-    public function mark_and_delete(Request $request){
-        if($request->ajax()){
-            try{
-                if($request->mark_id){
+    public function mark_and_delete(Request $request)
+    {
+        if ($request->ajax()) {
+            try {
+                if ($request->mark_id) {
                     $message = Inbox::find($request->mark_id);
                     $message->isRead = !$request->mark_bool;
                     $message->save();
                     return response()->json('Done');
                 }
-                if($request->delete_id){
+                if ($request->delete_id) {
                     $message = Inbox::find($request->delete_id);
                     $message->delete();
                     return response()->json('Message Deleted');
                 }
-            }catch(Exception $error){
+            } catch (Exception $error) {
                 Log::error($error->getMessage(), [
                     'line' => $error->getLine(),
                     'file' => $error->getFile()
@@ -155,47 +157,63 @@ class AdminController extends Controller
 
     //===================== FORMS ==================================//
 
-    public function forms(?string $formID = null,?string $delete = null){
-        if($formID == null && $delete == null){
-            return view('admin.form',['forms'=>Assistance::orderBy('created_at','desc')->paginate(5)]);
-        }else if($formID != null && $delete == null ){
-           $id = base64_decode($formID);
-           return view('admin.form_details',['data'=>Assistance::find($id)->first()]);
-        }else{
+    public function forms(?string $formID = null, ?string $delete = null)
+    {
+        if ($formID == null && $delete == null) {
+            return view('admin.form', ['forms' => Assistance::orderBy('created_at', 'desc')->paginate(5)]);
+        } else if ($formID != null && $delete == null) {
+            $id = base64_decode($formID);
+            return view('admin.form_details', ['data' => Assistance::find($id)->first()]);
+        } else {
             $id = base64_decode($formID);
             $form = Assistance::find($id);
             $form->delete();
-            return redirect()->route('forms')->with(['success'=>"Delete Success"]);
+            return redirect()->route('forms')->with(['success' => "Delete Success"]);
         }
     }
+
+    public function searchForm(Request $request)
+    {
+        if($request->value != ""){
+            return view('admin.tables.Form', [
+            'data' => Assistance::where('FirstName', 'like', '%' . $request->value . '%')
+                ->orWhere('MiddleName', 'like', '%' . $request->value . '%')
+                ->orWhere('LastName', 'like', '%' . $request->value . '%')
+                ->orderBy('created_at', 'desc')->get()
+            ]);
+        }
+    }
+
 
     //===================== END FORMS ==================================//
 
 
     //===================== ACCOUNT ==================================//
 
-    public function account(){
+    public function account()
+    {
         return view('admin.account');
     }
 
-    public function updateAccount(Request $request ,User $adminID){
+    public function updateAccount(Request $request, User $adminID)
+    {
         $validatedData = $request->validate([
-           'username'=> 'max:255',
-           'role'=> '',
-           'email'=> 'email',
-           'oldpass'=> 'nullable|min:8',
-           'password'=> 'nullable|min:8',
+            'username' => 'max:255',
+            'role' => '',
+            'email' => 'email',
+            'oldpass' => 'nullable|min:8',
+            'password' => 'nullable|min:8',
         ]);
 
-        if($validatedData['password'] == null || $validatedData['oldpass'] == null ){
+        if ($validatedData['password'] == null || $validatedData['oldpass'] == null) {
             $adminID->name = $validatedData['username'];
             $adminID->role = $validatedData['role'];
             $adminID->email = $validatedData['email'];
             $adminID->update();
         }
 
-        if($request->filled('oldpass')){
-            if(!Hash::check($request->input('oldpass'),$adminID->password)){
+        if ($request->filled('oldpass')) {
+            if (!Hash::check($request->input('oldpass'), $adminID->password)) {
                 return back()->withErrors(['password' => 'The old password is incorrect.']);
             }
         }
@@ -205,7 +223,7 @@ class AdminController extends Controller
             $adminID->update($validatedData);
         }
 
-        return back()->with(['success'=>"Update successfully!"]);
+        return back()->with(['success' => "Update successfully!"]);
     }
     //===================== END ACCOUNT ==================================//
 
