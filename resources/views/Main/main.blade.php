@@ -11,7 +11,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>Media House Express</title>
-    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('images/logo.webp') }}" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800;900&display=swap"
