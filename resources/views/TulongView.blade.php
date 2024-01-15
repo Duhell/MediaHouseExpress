@@ -3,7 +3,7 @@
     @if (session('success'))
         <div id="success" class="toast z-50 font-['inter'] toast-top toast-center">
             <div class="alert text-white alert-success">
-                <span>{{ session('success') }}</span>
+                <span>📣 {{ session('success') }}</span>
             </div>
         </div>
     @endif
@@ -38,7 +38,7 @@
         <span class="text-slate-200 text-2xl md:text-4xl font-['lexend']">Tabang / Tulong </span>
     </section>
 
-    <section class="px-8 md:px-10 max-w-[1328px] mx-auto">
+    <section data-aos="fade-up" class="px-8 md:px-10 max-w-[1328px] mx-auto">
         <p class="mt-6 font-['lexend'] text-lg md:text-2xl">Request Assistance Form</p>
         <small><i>Fields marked with an asterisk (<span class="text-red-800">*</span>) are required</i></small>
         <form enctype="multipart/form-data" method="POST" action="{{ route('SendRequest') }}"

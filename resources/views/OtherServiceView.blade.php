@@ -1,12 +1,12 @@
-<section class="md:w-[1228px] w-full px-[76px] mx-auto mt-[60px] md:mt-[127px]">
+<section class="lg:w-[1228px] w-full px-[76px] mx-auto mt-[60px] md:mt-[127px]">
     <div data-aos="fade-up" class="text-center mb-[46px] md:mb-[73px]">
         <p class="font-['lexend'] text-2xl md:text-[36px] text-[#333]">Other Services</p>
-        <p class="font-['inter'] text-xs md:text-sm">We provide essential support for OFWs abroad</p>
+        <p class="font-['inter'] mt-2 text-xs md:text-sm">We provide essential support for OFWs abroad</p>
     </div>
 
-    <div data-aos="fade-up" class="grid gap-y-[58px] place-items-center grid-cols-1 lg:grid-cols-2">
+    <div data-aos="fade-up" class="grid gap-y-[58px] gap-5 place-items-center grid-cols-1 lg:grid-cols-2">
         <div class="longCard  w-full flex gap-x-5 items-center">
-            <div class="icon">
+            <div class="icon hidden md:block">
                 <svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_38_373)">
                     <path d="M66.06 67.4999H64.44V47.2499C64.44 46.9102 64.656 46.6042 64.9755 46.4872C67.5315 45.5647 68.94 43.5959 68.94 40.9477V29.2499C68.94 24.7342 65.2658 21.0599 60.75 21.0599C56.2343 21.0599 52.56 24.7342 52.56 29.2499V40.9724C52.56 43.6049 53.9685 45.5647 56.5245 46.4872C56.8463 46.6042 57.06 46.9102 57.06 47.2499V67.4999H55.44V47.7989C52.5735 46.5592 50.94 44.0999 50.94 40.9724V29.2499C50.94 23.8409 55.341 19.4399 60.75 19.4399C66.159 19.4399 70.56 23.8409 70.56 29.2499V40.9477C70.56 44.0887 68.9265 46.5592 66.06 47.7989V67.4999ZM16.56 67.4999H14.94V47.2499C14.94 46.9102 15.1538 46.6042 15.4733 46.4872C18.0315 45.5647 19.44 43.5959 19.44 40.9477V29.2499C19.44 24.7342 15.7658 21.0599 11.25 21.0599C6.73425 21.0599 3.06 24.7342 3.06 29.2499V40.9724C3.06 43.6049 4.4685 45.5647 7.02675 46.4872C7.34625 46.6042 7.56 46.9102 7.56 47.2499V67.4999H5.94V47.7989C3.07125 46.5592 1.44 44.0999 1.44 40.9724V29.2499C1.44 23.8409 5.841 19.4399 11.25 19.4399C16.659 19.4399 21.06 23.8409 21.06 29.2499V40.9477C21.06 44.0887 19.4288 46.5592 16.56 47.7989V67.4999ZM60.75 16.5599C57.2018 16.5599 54.315 13.6732 54.315 10.1249C54.315 6.57669 57.2018 3.68994 60.75 3.68994C64.2983 3.68994 67.185 6.57669 67.185 10.1249C67.185 13.6732 64.2983 16.5599 60.75 16.5599ZM60.75 5.30994C58.095 5.30994 55.935 7.46994 55.935 10.1249C55.935 12.7799 58.095 14.9399 60.75 14.9399C63.405 14.9399 65.565 12.7799 65.565 10.1249C65.565 7.46994 63.405 5.30994 60.75 5.30994ZM11.25 16.5599C7.70175 16.5599 4.815 13.6732 4.815 10.1249C4.815 6.57669 7.70175 3.68994 11.25 3.68994C14.7983 3.68994 17.685 6.57669 17.685 10.1249C17.685 13.6732 14.7983 16.5599 11.25 16.5599ZM11.25 5.30994C8.595 5.30994 6.435 7.46994 6.435 10.1249C6.435 12.7799 8.595 14.9399 11.25 14.9399C13.905 14.9399 16.065 12.7799 16.065 10.1249C16.065 7.46994 13.905 5.30994 11.25 5.30994ZM43.3238 30.9284L42.1763 32.0737L45.2948 35.1922H26.7053L29.8215 32.0737L28.6763 30.9284L23.6048 35.9999L28.6785 41.0737L29.8238 39.9262L26.7075 36.8099H45.297L42.1785 39.9262L43.326 41.0737L48.3953 35.9999L43.3238 30.9284Z" fill="black"/>
@@ -19,13 +19,13 @@
                 </svg>
             </div>
             <div>
-                <p class="font-['lexend'] text-[20px]">Legal Advice</p>
-                <p class="font-['inter'] text-base">For both labor and non-labor related problems.</p>
+                <p class="font-['lexend'] text-sm sm:text-base md:text-[20px]">Legal Advice</p>
+                <p class="font-['inter'] text-xs sm:text-sm md:text-base">For both labor and non-labor related problems.</p>
             </div>
         </div>
 
         <div class="longCard w-full  flex gap-x-5 items-center">
-            <div class="icon">
+            <div class="icon hidden md:block">
                 <svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_38_390)">
                 <path d="M13.2 48H10.8C10.8 49.9848 9.1848 51.6 7.2 51.6V54C9.1848 54 10.8 55.6152 10.8 57.6H13.2C13.2 55.6152 14.8152 54 16.8 54V51.6C14.8152 51.6 13.2 49.9848 13.2 48ZM12 54.0372C11.6496 53.5656 11.2344 53.1504 10.7628 52.8C11.2344 52.4496 11.6496 52.0344 12 51.5628C12.3504 52.0344 12.7656 52.4496 13.2372 52.8C12.7656 53.1504 12.3504 53.5656 12 54.0372Z" fill="black"/>
@@ -45,13 +45,13 @@
                 </svg>
             </div>
             <div>
-                <p class="font-['lexend'] text-[20px]">Translator</p>
-                <p class="font-['inter'] text-base">English or Arabic for OFW's, Employers and Government.</p>
+                <p class="font-['lexend'] text-sm sm:text-base md:text-[20px]">Translator</p>
+                <p class="font-['inter'] text-xs sm:text-sm md:text-base">English or Arabic languages for OFWs and family members; foreign employers, thr officers and employees of recruitment agencies; and officials and personnel of Philippine and other countries' governments.</p>
             </div>
         </div>
 
         <div class="longCard w-full  flex gap-x-5 items-center">
-            <div class="icon">
+            <div class="icon hidden md:block">
                 <svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M24.3366 27.477L19.6211 32.2293C18.7493 33.1108 18.1647 34.2591 18.1647 35.5394V37.6712C18.1647 38.5002 18.8312 39.1703 19.6523 39.1703H26.8491C27.6703 39.1703 28.3367 38.5377 28.3367 37.7581C28.3367 36.9756 27.6703 36.3429 26.8476 36.3429H22.9368C22.1157 36.3429 21.4493 36.163 21.4493 35.9427C21.4493 35.7193 21.4493 35.5409 21.4493 35.5409C21.4493 35.0612 21.6337 34.6069 21.9521 34.3131L26.6676 29.5623C27.5408 28.6808 28.0972 27.5325 28.0972 26.2522V23.9555C28.0972 21.6348 25.9253 19.7384 23.2492 19.7384C20.5746 19.7384 18.4027 21.6333 18.4027 23.9555V24.8895C18.4027 25.4067 19.0677 25.8249 19.8903 25.8249H20.1997C21.0209 25.8249 21.6873 25.4067 21.6873 24.8895C21.6873 24.3738 21.6873 23.9555 21.6873 23.9555C21.6873 23.2089 22.4028 22.5673 23.2492 22.5673C24.1239 22.5673 24.8127 23.2089 24.8127 23.9555V26.2522C24.8127 26.7304 24.6282 27.1577 24.3366 27.477Z" fill="#030104"/>
                     <path d="M40.3636 19.9497H40.0557C39.2331 19.9497 38.2245 20.5254 37.8006 21.236L31.7551 31.3987C31.3341 32.1093 30.9905 33.3191 30.9905 34.1001C30.9905 34.8797 31.6554 35.5138 32.4781 35.5138H37.0761C37.9002 35.5138 38.5637 36.1839 38.5637 37.013V37.6711C38.5637 38.5001 39.2286 39.1702 40.0513 39.1702H40.3622C41.1848 39.1702 41.8497 38.5016 41.8497 37.6711V37.013C41.8497 36.1839 42.0848 35.5138 42.3763 35.5138C42.6709 35.5138 42.9059 34.8812 42.9059 34.1001C42.9059 33.3176 42.6709 32.6834 42.3778 32.6834C42.0877 32.6834 41.8497 32.0133 41.8497 31.1843V21.4489C41.8512 20.6198 41.1878 19.9497 40.3636 19.9497ZM38.5652 31.1843C38.5652 32.0133 37.9017 32.6834 37.0776 32.6819H36.0542C35.233 32.6819 34.9073 32.1048 35.3253 31.3927L37.808 27.1651C38.226 26.4545 38.5667 26.5459 38.5667 27.375L38.5652 31.1843Z" fill="#030104"/>
@@ -62,13 +62,13 @@
 
             </div>
             <div>
-                <p class="font-['lexend'] text-[20px]">Contact Anytime</p>
-                <p class="font-['inter'] text-base">24/7 Help Hotline for immediate support.</p>
+                <p class="font-['lexend'] text-sm sm:text-base md:text-[20px]">Contact Anytime</p>
+                <p class="font-['inter'] text-xs sm:text-sm md:text-base">For twenty four hours, seven days (24/7) Help Hotline is available to accommodate calls or short messaging system (SMS) for request of immediate assistance and support.</p>
             </div>
         </div>
 
         <div class="longCard w-full  flex gap-x-5 items-center">
-            <div class="icon">
+            <div class="icon hidden md:block">
                 <svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M6.96178 10.508C-1.36034 18.7652 -1.36034 32.1571 6.96171 40.4143L14.336 47.7403C14.9002 48.3009 15.8119 48.2979 16.3725 47.7337C16.933 47.1695 16.93 46.2577 16.3658 45.6972L8.99086 38.3705C1.80352 31.2392 1.80352 19.6831 8.99023 12.5525C16.1839 5.4156 27.851 5.4156 35.0447 12.5525C35.6061 13.1095 36.5117 13.1095 37.0731 12.5525C44.2661 5.4156 55.9338 5.4156 63.1268 12.5525C70.3142 19.6831 70.3142 31.2392 63.1268 38.3698L59.6785 41.7972C59.1145 42.3579 59.1116 43.2696 59.6723 43.8336C60.233 44.3977 61.1447 44.4005 61.7088 43.8398L65.1561 40.4134C73.478 32.1571 73.478 18.7651 65.1552 10.5079C57.1695 2.58454 44.4226 2.26996 36.0588 9.56425C27.6945 2.26996 14.9482 2.58454 6.96185 10.5079L6.96178 10.508Z" fill="black"/>
                     <path d="M40.2515 18.5289L59.6728 37.9502C60.7348 39.0122 60.7348 40.735 59.6726 41.7977C58.6102 42.8601 56.8877 42.8601 55.8257 41.7977L48.714 34.686C48.1516 34.1237 47.2399 34.1237 46.6775 34.686C46.1152 35.2484 46.1152 36.1601 46.6775 36.7225L53.7889 43.8339C55.9754 46.0213 59.5218 46.0213 61.7092 43.8339C63.8959 41.6463 63.8959 38.1002 61.7092 35.9136L42.2879 16.4923C41.7255 15.93 40.8138 15.93 40.2515 16.4923C39.6891 17.0547 39.6891 17.9664 40.2515 18.5288L40.2515 18.5289Z" fill="black"/>
@@ -81,20 +81,20 @@
                 </svg>
             </div>
             <div>
-                <p class="font-['lexend'] text-[20px]">Social Welfare</p>
-                <p class="font-['inter'] text-base">Supporting communities with compassion and care</p>
+                <p class="font-['lexend'] text-sm sm:text-base md:text-[20px]">Social Welfare</p>
+                <p class="font-['inter'] text-xs sm:text-sm md:text-base">Collaborate with Philippine government agencies for migrant worker welfare, implementing nationwide livelihood projects, skills training, and entrepreneurial programs in barangays. Prioritize total care and empathy for communities.</p>
             </div>
         </div>
 
         <div class="longCard w-full  flex gap-x-5 items-center">
-            <div class="icon">
+            <div class="icon hidden md:block">
                 <svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M14.4 17.2688H30.4312V36.45H14.4V17.2688ZM36.7875 17.2688H49.6125V20.475H36.7875V17.2688ZM36.7875 33.3H49.6125V36.5063H36.7875V33.3ZM36.7875 25.2563H49.6125V28.4625H36.7875V25.2563ZM14.4 41.4H49.5562V44.6063H14.4V41.4ZM14.4 57.0375H49.5562V60.2438H14.4V57.0375ZM14.4 48.9938H49.5562V52.2H14.4V48.9938ZM13.5 0.900024V7.03128H6.41248V71.2688H58.5V65.1375H65.5875V0.900024H13.5ZM55.2937 68.1188H9.56247V10.1813H13.5H16.7062H55.2937V61.875V65.0813V68.1188ZM62.4375 61.9313H58.5V6.97503H16.7062V4.10628H62.4375V61.9313Z" fill="black"/>
                 </svg>
             </div>
             <div>
-                <p class="font-['lexend'] text-[20px]">Translation</p>
-                <p class="font-['inter'] text-base">Legal document translation.</p>
+                <p class="font-['lexend'] text-sm sm:text-base md:text-[20px]">Translation</p>
+                <p class="font-['inter'] text-xs sm:text-sm md:text-base">Legal document translation.</p>
             </div>
         </div>
     </div>

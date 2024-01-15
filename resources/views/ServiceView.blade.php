@@ -1,10 +1,10 @@
-<section id="services" class="md:w-[1228px] w-full min-h-min mx-auto mt-[36px] md:mt-[69px]">
+<section id="services" class="lg:w-[1228px] w-full min-h-min mx-auto mt-[36px] md:mt-[69px]">
     <div data-aos="fade-up" class="text-center mb-[48px] md:mb-[73px]">
         <p class="font-['lexend'] text-[24px] md:text-[36px] text-[#333]">Our Services</p>
-        <p class="font-['inter'] text-xs md:text-sm">We're here for OFWs, providing essential support and care abroad</p>
+        <p class="font-['inter'] text-xs md:text-sm max-w-xl mx-auto">We are dedicated and devoted to provide assistance, guidance, essential support and protection to OFWs and their family members elsewher in the world.</p>
     </div>
-    <div data-aos="fade-up" class="grid gap-y-5 md:gap-y-12 place-items-center grid-cols-1 lg:grid-cols-3">
-        <div class="card shadow-xl rounded-lg flex flex-col items-center px-[22px] py-[24px] md:py-[45px] w-full md:w-[289px] h-auto md:h-[305px]">
+    <div data-aos="fade-up" class="grid gap-y-5 md:gap-y-12 place-items-center grid-cols-1 lg:grid-cols-2">
+        <div class="card shadow-xl rounded-lg flex flex-col items-center px-[22px] py-[24px] md:py-[45px] w-full h-auto md:min-h-min">
             <div class="icon">
                 <svg width="66" height="72" viewBox="0 0 66 72" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M60.3639 35.67V38.34C60.3639 49.02 57.9221 51.66 48.182 51.66H17.6724C7.93238 51.66 5.49051 48.99 5.49051 38.34V19.32C5.49051 8.67 7.93238 6 17.6724 6H21.9525" stroke="#292D32" stroke-width="3.75" stroke-linecap="round" stroke-linejoin="round"/>
@@ -16,13 +16,13 @@
                 </svg>
             </div>
             <div class="font-['inter'] text-[#333] mt-[24px] text-center">
-                <p class="font-semibold text-[20px] mb-[24px]">Provide Monitoring </p>
-                <p class="text-base">OFW's whose contract has ended, no contract or even undocumented individuals.</p>
+                <p class="font-semibold font-['lexend'] text-sm sm:text-sm md:text-base lg:text-[20px] mb-[24px]">Provide Monitoring </p>
+                <p class="font-['inter'] text-xs sm:text-sm md:text-base">We monitor the conditions, situations and locations of OFWs whose contracts end or are terminated and those who are without contracts. We also shall keep tract our undocumented countrymen anywhere in the globe.</p>
             </div>
 
         </div>
 
-        <div class="card  rounded-lg flex flex-col items-center px-[22px] py-[24px] md:py-[45px] w-full md:w-[289px] h-auto md:h-[305px]">
+        <div class="card  flex flex-col items-center px-[22px] py-[24px] md:py-[45px] w-full h-auto md:min-h-min">
             <div class="icon">
                 <svg width="72" height="74" viewBox="0 0 72 74" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_38_226)">
@@ -41,13 +41,13 @@
                 </svg>
             </div>
             <div class="font-['inter'] text-[#333] mt-[24px] text-center">
-                <p class="font-semibold text-[20px] mb-[24px]">Provide Evidence  </p>
-                <p class="text-base">To provide evidence should there be a need for legal action.</p>
+                <p class="font-semibold font-['lexend'] text-sm sm:text-sm md:text-base lg:text-[20px] mb-[24px]">Provide Evidence  </p>
+                <p class="font-['inter'] text-xs sm:text-sm md:text-base">We help OFWs - victims of of maltreatment, abuse and and exploitation ( MAE) collate, gather, obtain and secure materials and other documentary evidences which shall be made bases and references in timely filing of legitimate monetary claims and other benefits; and in lodging appropriate cases against individuals who or institutions which commit MAE, human rights violations and other crimes.</p>
             </div>
 
         </div>
 
-        <div class="card  rounded-lg flex flex-col items-center px-[22px] py-[24px] md:py-[45px] w-full md:w-[289px] h-auto md:h-[305px]">
+        <div class="card  flex flex-col items-center px-[22px] py-[24px] md:py-[45px] w-full h-auto md:min-h-min">
             <div class="icon">
                 <svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_38_254)">
@@ -65,13 +65,13 @@
 
             </div>
             <div class="font-['inter'] text-[#333] mt-[24px] text-center">
-                <p class="font-semibold text-[20px] mb-[24px]">Provide Rescue   </p>
-                <p class="text-base">To organize a rescue mission should the need arise.</p>
+                <p class="font-semibold font-['lexend'] text-sm sm:text-sm md:text-base lg:text-[20px] mb-[24px]">Provide Rescue   </p>
+                <p class="font-['inter'] text-xs sm:text-sm md:text-base">To request the officials and employees of agencies and offices of Philippine government and other countries to conduct rescue missions and operations as needs arise.</p>
             </div>
 
         </div>
 
-        <div class="card  rounded-lg flex flex-col items-center px-[22px] py-[24px] md:py-[45px] w-full md:w-[289px] h-auto md:h-[305px]">
+        <div class="card  flex flex-col items-center px-[22px] py-[24px] md:py-[45px] w-full h-auto md:min-h-min">
             <div class="icon">
                 <svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M31.47 6.69018L16.5001 12.3302C13.0501 13.6202 10.2301 17.7002 10.2301 21.3602V43.6503C10.2301 47.1903 12.5701 51.8403 15.4201 53.9703L28.3201 63.6003C32.55 66.7803 39.51 66.7803 43.74 63.6003L56.64 53.9703C59.49 51.8403 61.83 47.1903 61.83 43.6503V21.3602C61.83 17.6702 59.01 13.5902 55.56 12.3002L40.59 6.69018C38.04 5.76018 33.96 5.76018 31.47 6.69018Z" stroke="#292D32" stroke-width="3.75" stroke-linecap="round" stroke-linejoin="round"/>
@@ -79,26 +79,26 @@
                 </svg>
             </div>
             <div class="font-['inter'] text-[#333] mt-[24px] text-center">
-                <p class="font-semibold text-[20px] mb-[24px]">Provide Protection </p>
-                <p class="text-base">To provide protection among OFW's, Agencies and Employers.</p>
+                <p class="font-semibold font-['lexend'] text-sm sm:text-sm md:text-base lg:text-[20px] mb-[24px]">Provide Protection </p>
+                <p class="font-['inter'] text-xs sm:text-sm md:text-base">To provide protection, security and shelter first and foremost to Filipino migrant workers via determination of which agencies they belong and who are their respective employers.</p>
             </div>
 
         </div>
 
-        <div class="card  rounded-lg flex flex-col items-center px-[22px] py-[24px] md:py-[45px] w-full md:w-[289px] h-auto md:h-[305px]">
+        <div class="card  flex flex-col items-center px-[22px] py-[24px] md:py-[45px] w-full h-auto md:min-h-min">
             <div class="icon">
                 <svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M14.4 17.2688H30.4313V36.45H14.4V17.2688ZM36.7875 17.2688H49.6125V20.475H36.7875V17.2688ZM36.7875 33.3H49.6125V36.5063H36.7875V33.3ZM36.7875 25.2563H49.6125V28.4625H36.7875V25.2563ZM14.4 41.4H49.5563V44.6063H14.4V41.4ZM14.4 57.0375H49.5563V60.2438H14.4V57.0375ZM14.4 48.9938H49.5563V52.2H14.4V48.9938ZM13.5 0.900024V7.03128H6.4125V71.2688H58.5V65.1375H65.5875V0.900024H13.5ZM55.2938 68.1188H9.5625V10.1813H13.5H16.7063H55.2938V61.875V65.0813V68.1188ZM62.4375 61.9313H58.5V6.97503H16.7063V4.10628H62.4375V61.9313Z" fill="black"/>
                 </svg>
             </div>
             <div class="font-['inter'] text-[#333] mt-[24px] text-center">
-                <p class="font-semibold text-[20px] mb-[24px]">Provide Records </p>
-                <p class="text-base">To provide information and records which can be used legally or any other purpose they may be served.</p>
+                <p class="font-semibold font-['lexend'] text-sm sm:text-sm md:text-base lg:text-[20px] mb-[24px]">Provide Records </p>
+                <p class="font-['inter'] text-xs sm:text-sm md:text-base">To provide information and necessary records either audio and video files and other media which shall be utilized for legal purposes and other relative undertakings.</p>
             </div>
 
         </div>
 
-        <div class="card shadow-xl  rounded-lg flex flex-col items-center px-[22px] py-[24px] md:py-[45px] w-full md:w-[289px] h-auto md:h-[305px]">
+        <div class="card shadow-xl rounded-lg flex flex-col items-center px-[22px] py-[24px] md:py-[45px] w-full h-auto md:min-h-min">
             <div class="icon">
                 <svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_38_354)">
@@ -115,8 +115,8 @@
                 </svg>
             </div>
             <div class="font-['inter'] text-[#333] mt-[24px] text-center">
-                <p class="font-semibold text-[20px] mb-[24px]">To Alarm </p>
-                <p class="text-base">To alarm or enable the Philippine Government to be notified if problems arise</p>
+                <p class="font-semibold font-['lexend'] text-sm sm:text-sm md:text-base lg:text-[20px] mb-[24px]">To Alarm </p>
+                <p class="font-['inter'] text-xs sm:text-sm md:text-base">To alarm or give signal to concerned officials and personnel of agencies or offices of Philippine government to advise and notify them of problems encountered and miserable situations being experienced by OFWs.</p>
             </div>
 
         </div>

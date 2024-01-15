@@ -62,7 +62,10 @@
                             <dt class="font-medium text-gray-900">Location in KSA</dt>
                             <dd class="text-gray-700 sm:col-span-2">{{ $data->LocationKSA }}</dd>
                         </div>
-
+                        <div class="grid grid-cols-1 gap-1 p-3 odd:bg-gray-50 sm:grid-cols-3 sm:gap-4">
+                            <dt class="font-medium text-gray-900">Employer Name</dt>
+                            <dd class="text-gray-700 sm:col-span-2">{{ $data->EmployerName }}</dd>
+                        </div>
 
                     </dl>
                 </div>
@@ -71,11 +74,6 @@
             <div class=" w-full ">
                 <div class="flow-root rounded-lg bg-white  border border-gray-200 py-3 shadow-sm">
                     <dl class="-my-3 divide-y divide-gray-100 text-sm">
-                        <div class="grid grid-cols-1 gap-1 p-3 odd:bg-gray-50 sm:grid-cols-3 sm:gap-4">
-                            <dt class="font-medium text-gray-900">Employer Name</dt>
-                            <dd class="text-gray-700 sm:col-span-2">{{ $data->EmployerName }}</dd>
-                        </div>
-
                         <div class="grid grid-cols-1 gap-1 p-3 odd:bg-gray-50 sm:grid-cols-3 sm:gap-4">
                             <dt class="font-medium text-gray-900">Employer Telephone</dt>
                             <dd class="text-gray-700 sm:col-span-2">{{ $data->EmployerTele }}</dd>
@@ -125,6 +123,15 @@
                             <dt class="font-medium text-gray-900">Complaints</dt>
                             <dd class="text-gray-700 sm:col-span-2">{{ $data->Complaint }}</dd>
                         </div>
+
+                        <div class="grid grid-cols-1 gap-1 bg-white  rounded-md p-3 odd:bg-gray-50 sm:grid-cols-3 sm:gap-4">
+                            <dt class="font-medium text-gray-900">Submitted From:</dt>
+                            <dd class="text-gray-700 sm:col-span-2"><button class="inline-block rounded bg-indigo-600 px-4 py-2 text-xs font-medium text-white hover:bg-indigo-700" onclick="map_modal.showModal()">View Map</button></dd>
+                        </div>
+
+                        <div class="mt-5">
+
+                        </div>
                     </dl>
                 </div>
                 <div class="mt-3 flex justify-end gap-x-3">
@@ -135,6 +142,21 @@
 
         </div>
     </div>
+    <dialog id="map_modal" class="modal">
+        @php
+            $locationParts = explode('|',$data->Location);
+            list($country,$region,$postalCode,$city,$latitude,$longitude) =array_map('trim',$locationParts);
+        @endphp
+        <div class="modal-box">
+            <iframe class="w-full" height="250" frameborder="0" style="border:0" referrerpolicy="no-referrer-when-downgrade"
+                src="https://www.google.com/maps/embed/v1/place?key={{ env('APP_GOOGLE_MAP_API_KEY') }}&q={{ $latitude }},{{$longitude  }}" allowfullscreen>
+            </iframe>
+        </div>
+        <form method="dialog" class="modal-backdrop">
+          <button>close</button>
+        </form>
+    </dialog>
+
     <dialog id="deleteModal" class="modal font-['inter']">
         <div class="modal-box">
           <form method="dialog">

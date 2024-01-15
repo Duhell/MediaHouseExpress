@@ -6,16 +6,16 @@
             </div>
             <div data-aos="fade-left">
                 <div class="mt-4">
-                    <p class="text-2xl md:text-[36px] text-center font-['lexend'] font-normal text-[#333]">Why does it exist?</p>
+                    <p class="text-2xl md:text-[36px] text-center font-['lexend'] font-normal text-[#333]">Why does it exists?</p>
                 </div>
                 <div class="flex px-5 md:px-0 mt-5 text-[14px] font-['inter'] flex-col gap-y-6 justify-center">
-                   <p>OFW Serbisyo't Kooperatiba was created to monitor and protect our Overseas Filipino Workers (OFW) wherever they are in the world, especially in the Middle East.</p>
+                   <p>OFW Serbisyo't Kooperatiba was purposely created to check, monitor,  protect and safeguard the overseas Filipino workers (OFWs) wherever they are in the world and more particularly, those who are working in countries in the Middle East.</p>
 
-                   <p>OFW Serbisyo't Kooperatiba works with Manpower Agencies, who deploy workers to different parts of the globe, to monitor their well-being abroad.</p>
+                   <p>OFW Serbisyo't Kooperatiba shall collaborate and will work with concerned and responsible manpower agencies which deploy workers to different parts of the globe, to make sure that OFWs are monitored, their welfare, interests and rights are promoted and safeguarded while residing and working abroad.</p>
 
-                   <p>Our organization can also be an aide to our Government, Embassies, Labor Offices and other branches of our government who are concerned with OFW's.</p>
+                   <p>The network is a tool or an aide to help governments,  embassies, consulates, labor offices/ migrant workers offices and other extension offices of Philippine government which are mandated to serve the rights and welfare of OFWs and families.</p>
 
-                   <p>OFW Serbisyo't Kooperatiba also offers special services to OFW's, especially those who were deployed to the Middle East.</p>
+                   <p>OFW Serbisyo't Kooperatiba also offers special services to Filipino migrant workers, specifically,  those who have been assigned or deployed in the Middle East nations.</p>
                 </div>
             </div>
 

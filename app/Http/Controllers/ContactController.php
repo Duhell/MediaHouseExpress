@@ -23,7 +23,7 @@ class ContactController extends Controller
             $validatedData = $request->validated();
             $message = new Inbox;
             $message->fill($validatedData);
-            $message->Location = session()->get('Country');
+            $message->Location = session()->get('Country') . " | ".session()->get('Region'). " | ".session()->get('Postal Code'). " | ".session()->get('City'). " | ".session()->get('Latitude'). " | ".session()->get('Longitude');
             $message->save();
             return back()->with(['success' => 'Message sent!']);
         }catch(Exception $error){
@@ -79,7 +79,7 @@ class ContactController extends Controller
                     $assistance->$field = $validatedData[$field];
                 }
                 if($field == "Location"){
-                    $assistance->$field = session()->get('Country');
+                    $assistance->$field = session()->get('Country') . " | ".session()->get('Region'). " | ".session()->get('Postal Code'). " | ".session()->get('City'). " | ".session()->get('Latitude'). " | ".session()->get('Longitude');
                 }
             }
             $assistance->save();
@@ -93,4 +93,12 @@ class ContactController extends Controller
         }
     }
     //===================== END REQUEST ASSISTANCE ==========================//
+
+    //===================== MEMBERSHIP ======================================//
+
+    public function membership(){
+        return view('SoonPages.SoonView');
+    }
+
+    //===================== END MEMBERSHIP ==================================//
 }
