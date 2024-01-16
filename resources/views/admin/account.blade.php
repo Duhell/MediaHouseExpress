@@ -1,4 +1,5 @@
 @extends('admin.parts.layout')
+@section('title','Account | OFW Sebisyo')
 @section('AdminContents')
 @if (session('success'))
 <div id="notif" class="toast z-50 font-['inter'] toast-end">
