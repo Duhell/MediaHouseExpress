@@ -7,6 +7,7 @@ use App\Models\User;
 use App\Models\Inbox;
 use App\Models\Visit;
 use App\Models\Assistance;
+use App\Models\Episode;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Auth;
@@ -92,6 +93,8 @@ class AdminController extends Controller
 
     //===================== END DASHBOARD ==================================//
 
+
+
     //===================== INBOX ==================================//
     public function inbox(Request $request)
     {
@@ -155,6 +158,7 @@ class AdminController extends Controller
     //===================== END INBOX ==================================//
 
 
+
     //===================== FORMS ==================================//
 
     public function forms(?string $formID = null, ?string $delete = null)
@@ -186,6 +190,64 @@ class AdminController extends Controller
 
 
     //===================== END FORMS ==================================//
+
+
+
+    //===================== EPISODES ==================================//
+
+    public function episodes(string $delete = null, string $delete_id = null)
+    {
+        if($delete === null && $delete_id === null){
+            $data = Episode::orderBy('created_at','desc')->get();
+            return view('admin.episodes',compact('data'));
+        }
+
+        if($delete == "delete" && $delete_id != ""){
+            $id = base64_decode($delete_id);
+            return $this->delete_episode($id);
+        }
+    }
+
+    public function add_episode(Request $request)
+    {
+        $validateRequest = $request->validate([
+           'title'=>"required|max:255",
+           'yt_url'=>"required"
+        ]);
+
+        try{
+            $new_episode = new Episode;
+            $new_episode->fill($validateRequest);
+            $new_episode->save();
+            return back()->with(['success' => 'New episode added!']);
+        }catch(Exception $error){
+            Log::error($error->getMessage(), [
+                'line' => $error->getLine(),
+                'file' => $error->getFile()
+            ]);
+        }
+
+    }
+
+    private function delete_episode(string $delete_id)
+    {
+        try{
+            $episode = Episode::find($delete_id);
+            if(!$episode){
+                return back()->withErrors(['error' => 'Failed to delete!']);
+            }
+            $episode->delete();
+            return back()->with(['success' => 'Delete Success!']);
+        }catch(Exception $error){
+            Log::error($error->getMessage(), [
+                'line' => $error->getLine(),
+                'file' => $error->getFile()
+            ]);
+        }
+    }
+
+
+    //===================== END EPISODES ==================================//
 
 
     //===================== ACCOUNT ==================================//

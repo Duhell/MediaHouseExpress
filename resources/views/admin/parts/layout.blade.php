@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>Media House Express</title>
+    <title>@yield('title')</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -34,5 +34,24 @@
             document.getElementById('loading_state').style.display = "none"
         })
     </script>
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const errorShow = document.getElementById('err');
+                const successShow = document.getElementById('success');
+
+                const hideElements = () => {
+                    if (errorShow) {
+                        errorShow.style.display = "none";
+                    }
+                    if (successShow) {
+                        successShow.style.display = "none";
+                    }
+                };
+
+                if (errorShow || successShow) {
+                    setTimeout(hideElements, 7000);
+                }
+            });
+        </script>
 </body>
 </html>

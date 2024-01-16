@@ -2,11 +2,15 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/',\App\Http\Controllers\HomeController::class )->middleware('visit');
-Route::get("/contact",[\App\Http\Controllers\ContactController::class,'contact'])->name('contact');
+Route::get('/',\App\Http\Controllers\HomeController::class )->name('home')->middleware('visit');
+Route::get("/contact",[\App\Http\Controllers\ContactController::class,'contact'])->name('contact')->middleware('visit');
 Route::post("/contact",[\App\Http\Controllers\ContactController::class,'send_contact'])->name('SendContact');
-Route::get("/request-assistance",[\App\Http\Controllers\ContactController::class,'tulong'])->name('tabang_tulong');
+Route::get("/request-assistance",[\App\Http\Controllers\ContactController::class,'tulong'])->name('tabang_tulong')->middleware('visit');
 Route::post("/request-assistance",[\App\Http\Controllers\ContactController::class,'send_request'])->name('SendRequest');
+Route::get("/membership",[\App\Http\Controllers\ContactController::class,'membership'])->name('membership')->middleware('visit');
+Route::post("/membership",[\App\Http\Controllers\ContactController::class,'send_membership'])->name('SendMembership');
+Route::get("/articles",\App\Http\Controllers\ArticleController::class);
+
 
 //================= Admin Routes =======================//
 Route::get('/admin/login',[\App\Http\Controllers\AdminController::class,"index"])->name('login');
@@ -19,3 +23,5 @@ Route::get('/admin/forms/{formID?}/{delete?}',[\App\Http\Controllers\AdminContro
 Route::post('/admin/forms/search',[\App\Http\Controllers\AdminController::class,'searchForm'])->middleware("auth")->name('searchForm');
 Route::get('/admin/account',[\App\Http\Controllers\AdminController::class,'account'])->middleware("auth")->name('account');
 Route::patch('/admin/account/{adminID}',[\App\Http\Controllers\AdminController::class,'updateAccount'])->middleware("auth")->name('updateAccount');
+Route::get('/admin/episodes/{delete?}/{delete_id?}',[\App\Http\Controllers\AdminController::class,'episodes'])->middleware("auth")->name('episodes');
+Route::post('/admin/episodes',[\App\Http\Controllers\AdminController::class,'add_episode'])->middleware("auth")->name('add_episode');

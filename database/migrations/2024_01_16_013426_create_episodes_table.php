@@ -11,14 +11,10 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('visits', function (Blueprint $table) {
+        Schema::create('episodes', function (Blueprint $table) {
             $table->id();
-            $table->string('ip_address')->nullable();
-            $table->string('user_agent')->nullable();
-            $table->string('country')->nullable();
-            $table->string('region')->nullable();
-            $table->string('postal_code')->nullable();
-            $table->string('city')->nullable();
+            $table->string('title');
+            $table->string('yt_url');
             $table->timestamps();
         });
     }
@@ -28,6 +24,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('visits');
+        Schema::dropIfExists('episodes');
     }
 };

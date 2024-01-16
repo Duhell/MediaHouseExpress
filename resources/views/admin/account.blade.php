@@ -35,9 +35,9 @@
                       <dd class="text-gray-700 sm:col-span-2"><input name="username" class="focus:p-2 focus:outline-indigo-600" placeholder="Username" value="{{ Auth::user()->name }}" type="text"></dd>
                     </div>
 
-                    <div class="grid grid-cols-1 gap-1 p-3 sm:grid-cols-3 sm:gap-4">
+                    <div class="grid grid-cols-1  gap-1 p-3 sm:grid-cols-3 sm:gap-4">
                       <dt class="font-medium text-gray-900">Role</dt>
-                      <dd class="text-gray-700 sm:col-span-2"><input name="role" class="focus:p-2 focus:outline-indigo-600" placeholder="0,1,2" type="text" value="{{ Auth::user()->role }}" name=""></dd>
+                      <dd data-tip="hello" class="text-gray-700  sm:col-span-2 "><input name="role" class="focus:p-2 focus:outline-indigo-600 " placeholder="0,1,2" type="text" value="{{ Auth::user()->role }}" name=""></dd>
                     </div>
 
                     <div class="grid grid-cols-1 gap-1 p-3 sm:grid-cols-3 sm:gap-4">

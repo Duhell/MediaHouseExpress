@@ -1,4 +1,5 @@
 @extends('admin.parts.layout')
+@section('title','FORM | OFW Serbisyo')
 @section('AdminContents')
     <div class="bg-slate-50 overflow-y-auto w-full h-screen">
         <div class="md:p-5 min-h-min relative font-['lexend'] w-full flex flex-wrap md:gap-x-6">
@@ -12,16 +13,9 @@
                         </svg>
                     </button>
                 </div>
-                {{-- <div class="stat">
-
-            </div> --}}
             </div>
         </div>
         @if (session('success'))
-            {{-- <div role="alert" class="alert font-['lexend'] bg-[#addfad] w-full max-w-md mx-auto">
-        <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
-        <span>{{ session('success') }}</span>
-    </div> --}}
             <dialog open id="my_modal_2" class="modal ">
                 <div class="modal-box">
                     <h3 class="font-bold text-lg">Notification!</h3>

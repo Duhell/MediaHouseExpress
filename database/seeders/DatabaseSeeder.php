@@ -19,7 +19,7 @@ class DatabaseSeeder extends Seeder
            'name' => 'Yaramay',
            'role'=> 0,
            'email' => 'yaramay@ofwserbisyocop.online',
-           'password'=>Hash::make("Yaramay_2024")
+           'password'=>Hash::make("Yaramay2024")
         ]);
     }
 }

@@ -16,21 +16,37 @@ class LogVisit
      */
     public function handle(Request $request, Closure $next): Response
     {
+
         $ip = $request->ip();
         $user_agent = $request->header('User-Agent');
         $key = 'visit_'. md5($ip . $user_agent);
-
         if(!Cache::has($key)){
-            $response = Http::get("https://ipinfo.io/{$ip}/json");
-            $country = $response->json('country');
-            \App\Models\Visit::create([
-               'ip_address'=>$ip,
-               'user_agent'=>$user_agent,
-               'country'=>$country
-            ]);
-            session()->put('Country',$country);
+            $ch = curl_init();
+            curl_setopt($ch,CURLOPT_URL,'https://ipgeolocation.abstractapi.com/v1/?api_key='. env('APP_VISIT_API_KEY') .'&ip_address='. $ip);
+            curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+            curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
+            $response = curl_exec($ch);
+            curl_close($ch);
 
-            Cache::put($key,true,now()->addMinutes(10));
+            $data = json_decode($response);
+
+            $visited = new \App\Models\Visit;
+            $visited->ip_address = $ip;
+            $visited->user_agent = $user_agent;
+            $visited->country = $data->country;
+            $visited->region = $data->region;
+            $visited->postal_code = $data->postal_code;
+            $visited->city = $data->city;
+            $visited->save();
+
+            session()->put('Country',$data->country);
+            session()->put('Region',$data->region);
+            session()->put('Postal Code',$data->postal_code);
+            session()->put('City',$data->city);
+            session()->put('Latitude',$data->latitude);
+            session()->put('Longitude',$data->longitude);
+
+            Cache::put($key,true,now()->addMinutes(60));
         }
 
 

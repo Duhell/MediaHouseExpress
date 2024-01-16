@@ -1,42 +1,65 @@
-<section id="about" class="md:w-[1228px] w-full min-h-min mx-auto ">
-    <div data-aos="fade-up">
-        <p class="text-2xl md:text-[32px] relative after:content-['']  after:h-[3px] after:bottom-[-30px] after:left-[25%] after: after:hidden md:after:block after:absolute after:border-b after:w-[535px] after:bg-[#333] text-center font-['lexend'] no-underline md:underline underline-offset-[20px] font-bold text-[#333]">What is this organization and what is this for?</p>
+<section  class="md:w-[1228px] w-full min-h-min mx-auto ">
+    <div data-aos="fade-up" class="px-5 md:px-0">
+        <p class="text-2xl md:text-[32px] relative after:content-['']  after:h-[3px] after:bottom-[-30px] after:left-[25%] after: after:hidden md:after:block after:absolute after:border-b after:w-[535px] after:bg-[#333] text-center font-['lexend'] no-underline md:underline underline-offset-[20px] font-bold text-[#333]">What platform it is and what are its purposes?</p>
     </div>
-    <div class="grid px-5 md:px-0 grid-rows-4 gap-y-8 grid-cols-1 mt-[50px] md:mt-[101px]">
+    <div class="grid px-5 md:px-0 grid-rows-3 gap-y-8 grid-cols-1 mt-[50px] md:mt-[101px]">
         <div data-aos="fade-up" data-aos-duration="700" class="flex flex-col md:flex-row gap-y-3 md:gap-y-0 items-center md:gap-x-5">
-            <div class="w-[80px]  h-auto">
+            {{-- <div class="w-[80px]  h-auto">
                 <img class="w-full h-full" src="{{ asset('images/logo.webp') }}" alt="Logo">
-            </div>
-            <div class="md:w-[1177px] font-['inter']">
-                <p>OFW Serbisyo't Kooperatiba is a non-governmental organization (NGO) in the Philippines whose function is to help Manning Agencies with the deployment and monitoring of Overseas Filipino Workers. Skilled, non-skilled, professional, or non-professional, whatever your occupation may be, they are here to lend a helping hand.</p>
+            </div> --}}
+            <div class="md:w-[1177px] font-['inter'] text-sm sm:text-base">
+                <p>OFW Serbisyo't Kooperatiba is a public service online platform via FB as of 24 Oct 2017 as initiated by Tirso Nieva Paglicawan, Jr.</p>
+                <p>The talkshow  caters and is declared to be entirely dedicated and specially devoted to Filipino migrant workers and their families  wherever on earth who are in dire need of assistance and help. Victory stories of OFWs and family members are  shown to encourage and inspire to fellow Filipinos. This program also is a forum by, of and for cooperatives and peoples' organizations to promote the associations and the members.</p>
             </div>
         </div>
 
-        <div data-aos="fade-up" data-aos-duration="1000" class="flex flex-col md:flex-row gap-y-3 md:gap-y-0 items-center md:gap-x-5">
-            <div class="w-[80px]  h-auto">
+        <div data-aos="fade-up" data-aos-duration="1000" class="flex flex-col md:flex-row gap-y-1 md:gap-y-0 items-center md:gap-x-5">
+            {{-- <div class="w-[80px]  h-auto">
                 <img class="w-full h-full" src="{{ asset('images/republika_ng_pilipinas.webp') }}" alt="Republic">
-            </div>
-            <div class="md:w-[1177px] font-['inter']">
-                <p>OFW Serbisyo't Kooperatiba will help monitor OFW’s wellbeing, especially household service workers, if they are in a good working environment and if they can perform their jobs properly. Our main focus is also to ensure that workers are being paid regularly and not being maltreated or abused by their employers or other individuals within their vicinity.</p>
+            </div> --}}
+            <div class="md:w-[1177px] font-['inter'] text-sm sm:text-base">
+                <p>OFW Serbisyo't Kooperatiba had already known/ solved the labyrinth, maze or puzzle of migration of Filipino workforce. The industry of manning agencies, both local and foreign recruitment agencies which engaged and involved itself in the employment and deployment of land-based or sea-based skilled, non-skilled, professional, or non-professional migrant workers allover the globe. </p>
             </div>
         </div>
 
         <div data-aos="fade-up" data-aos-duration="1300" class="flex flex-col md:flex-row gap-y-3 md:gap-y-0 items-center md:gap-x-5">
-            <div class="w-[80px]  h-auto">
+            {{-- <div class="w-[80px]  h-auto">
                 <img class="w-full h-full" src="{{ asset('images/dole.webp') }}" alt="Dole">
-            </div>
-            <div class="md:w-[1177px] font-['inter']">
-                <p>We currently have a system that can be used for the first time in the country, with the assistance of YaraMay Computer Maintenance Services (YCMS), wherein it will help the Agencies and the Philippines Government to properly monitor our OFW’s abroad.</p>
-            </div>
-        </div>
-
-        <div data-aos="fade-up" data-aos-duration="1300" class="flex flex-col md:flex-row gap-y-3 md:gap-y-0 items-center md:gap-x-5">
-            <div class="w-[80px]  h-auto">
-                <img class="w-full h-full" src="{{ asset('images/owwa.webp') }}" alt="Logo">
-            </div>
-            <div class="md:w-[1177px] font-['inter']">
-                <p>OFW Serbisyo't Kooperatiba is currently spearheaded by PCSO Board of Directors Member, Ramon Ike Seneres and YCMS General Manager, Ferdenand “Ibraheem” Sabado. Currently, it can now be utilized by the Agencies and the Government to help with the deployment of our OFW’s to different parts of the globe We aim to help both the Agencies and the Government on reducing the likelihood of maltreatment, abuse, and loss of life of our fellow Filipinos abroad.</p>
+            </div> --}}
+            <div class="md:w-[1177px] font-['inter'] text-sm sm:text-base">
+                <p>Therefore, it readily is available and capable to help OFWs who are badly in need of assistance/ help and support. In this regard, OFW Serbisyo' t Kooperatiba will coordinate, communicate and serve as intermediary with responsible officials and personnel of agencies and offices of Philippine government to make sure that OFWs and family members' interests, rights and welfare are continuously promoted, protected and safeguarded.</p>
             </div>
         </div>
     </div>
+    <div data-aos="fade-up" data-aos-duration="1300" class="px-5 md:px-0  lg:mt-7">
+        {{-- <div class="w-[80px]  h-auto">
+            <img class="w-full h-full" src="{{ asset('images/owwa.webp') }}" alt="Logo">
+        </div> --}}
+        <details class="p-2 border rounded-md w-full">
+            <summary class="cursor-pointer hover:text-indigo-600">Read More </summary>
+            <div class="md:w-[1177px] p-2 text-sm sm:text-base font-['inter']">
+                <p>OFW Serbisyo't Kooperatiba is helping monitor the conditions and situations of OFWs especially, the household service workers to determine if they are in good working environment and performing their jobs and tasks properly. The main focus is also to ensure that workers are regularly, timely and rightly receiving compensations and salaries and stringently, all provisions in the contracts are followed. No OFW is maltreated, abused or exploited by  employers, recruitment agencies, colleagues or fellow OFWs and other stakeholders.</p>
+            </div>
+
+            <div class="md:w-[1177px] p-2 text-sm sm:text-base font-['inter']">
+                <p>OFW Serbisyo't Kooperatiba is equipped with a unique system which for the first time is now utilized in the country with the assistance of YaraMay Computer Maintenance Services (YCMS)
+                    whereby it helps agencies and offices of Philippine government to properly check, better monitor and watch the OFWs in different countries of the world.</p>
+            </div>
+
+            <div class="md:w-[1177px] p-2 text-sm sm:text-base font-['inter']">
+                <p>OFW Serbisyo't Kooperatiba is presently in close coordination and collaboration with
+                    Ramon "Ike" Señeres, former member of the Board of Directors of Philippine Charity Sweepstakes Office (PCSO); and Ferdinand "Ibraheem" Lawag Sabado, the manager of YaraMay Computer Maintenance Services (YCMS).
+                    .</p>
+            </div>
+
+            <div class="md:w-[1177px] p-2 text-sm sm:text-base font-['inter']">
+                <p>Currently, the platform/ network can now be utilized by agencies and the Philippine government as a channel and venue to also help them deployed OFWs to companies and employers in different parts of the globe where certainly, the interests, rights and general welfare of Filipino migrant workers are best monitored, safeguarded and protected by the system.</p>
+            </div>
+
+            <div class="md:w-[1177px] p-2 text-sm sm:text-base font-['inter']">
+                <p>OFW Serbisyo't Kooperatiba aims to help both the agencies and the Philippine government on reduction, if not total elimination of instances of maltreatment, abuse, exploitation, accidents/ ailments and losses of precious lives of fellow Filipinos abroad..</p>
+            </div>
+        </details>
+    </div>
+
 </section>

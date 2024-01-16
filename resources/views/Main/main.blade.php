@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>Media House Express</title>
+    <title>OFW Serbisyo Kooperatiba</title>
     <link rel="shortcut icon" type="image/x-icon" href="{{ asset('images/logo.webp') }}" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,7 +22,10 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
-    @vite('resources/css/app.css')
+    @vite([
+        'resources/css/app.css',
+        'resources/js/app.js'
+    ])
 </head>
 
 <body class="relative overflow-x-hidden">
@@ -50,7 +53,7 @@
             };
 
             if (errorShow || successShow) {
-                setTimeout(hideElements, 4000);
+                setTimeout(hideElements, 7000);
             }
         });
     </script>

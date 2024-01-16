@@ -1,9 +1,9 @@
 @extends('Main.main')
 @section('contents')
 @if (session('success'))
-<div id="success" class="toast z-50 font-['inter'] toast-end">
+<div id="success" class="toast z-50 font-['inter'] toast-top toast-center">
     <div class="alert text-white alert-success">
-        <span>{{ session('success') }}</span>
+        <span>📣 {{ session('success') }}</span>
     </div>
 </div>
 @endif
