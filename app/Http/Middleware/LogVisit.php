@@ -22,7 +22,7 @@ class LogVisit
         $key = 'visit_'. md5($ip . $user_agent);
         if(!Cache::has($key)){
             $ch = curl_init();
-            curl_setopt($ch,CURLOPT_URL,'https://ipgeolocation.abstractapi.com/v1/?api_key='. env('APP_VISIT_API_KEY') .'&ip_address=175.176.77.191');
+            curl_setopt($ch,CURLOPT_URL,'https://ipgeolocation.abstractapi.com/v1/?api_key='. env('APP_VISIT_API_KEY') .'&ip_address='. $ip);
             curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
             curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
             $response = curl_exec($ch);
