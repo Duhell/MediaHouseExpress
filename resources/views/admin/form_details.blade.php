@@ -1,4 +1,5 @@
 @extends('admin.parts.layout')
+@section('title','Details | OFW Serbisyo')
 @section('AdminContents')
     <div class="bg-slate-50 w-full overflow-y-auto h-screen">
         <div class="md:p-5 min-h-min font-['lexend'] w-full flex flex-wrap md:gap-x-6">

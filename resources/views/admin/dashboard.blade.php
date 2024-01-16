@@ -1,4 +1,5 @@
 @extends('admin.parts.layout')
+@section('title','Dashboard | OFW Serbisyo')
 @section('AdminContents')
     <div class="bg-slate-50 overflow-y-auto w-full h-screen">
         <div class="p-1 md:p-5 min-h-min font-['lexend']  w-full grid grid-cols-1 md:flex md:flex-wrap gap-x-0 gap-y-3 md:gap-y-0 md:gap-x-6">

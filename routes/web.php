@@ -23,3 +23,5 @@ Route::get('/admin/forms/{formID?}/{delete?}',[\App\Http\Controllers\AdminContro
 Route::post('/admin/forms/search',[\App\Http\Controllers\AdminController::class,'searchForm'])->middleware("auth")->name('searchForm');
 Route::get('/admin/account',[\App\Http\Controllers\AdminController::class,'account'])->middleware("auth")->name('account');
 Route::patch('/admin/account/{adminID}',[\App\Http\Controllers\AdminController::class,'updateAccount'])->middleware("auth")->name('updateAccount');
+Route::get('/admin/episodes/{delete?}/{delete_id?}',[\App\Http\Controllers\AdminController::class,'episodes'])->middleware("auth")->name('episodes');
+Route::post('/admin/episodes',[\App\Http\Controllers\AdminController::class,'add_episode'])->middleware("auth")->name('add_episode');
