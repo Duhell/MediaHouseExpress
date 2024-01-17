@@ -56,7 +56,7 @@
             <div class="sm:flex sm:justify-between sm:gap-4">
                 <div>
                     <h3 class="text-lg font-bold text-gray-900 sm:text-xl">
-                        Ferdinand (Ibraheem) Lawag Sabado
+                        Ferdenand (Ibraheem) Lawag Sabado
                     </h3>
 
                     <p class="mt-1 text-xs font-medium text-gray-600">The Co-Founder/Developer of Monitoring system of OFW</p>
