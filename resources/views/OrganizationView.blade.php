@@ -48,7 +48,7 @@
 
             <div class="md:w-[1177px] p-2 text-sm sm:text-base font-['inter']">
                 <p>OFW Serbisyo't Kooperatiba is presently in close coordination and collaboration with
-                    Ramon "Ike" Señeres, former member of the Board of Directors of Philippine Charity Sweepstakes Office (PCSO); and Ferdinand "Ibraheem" Lawag Sabado, the manager of YaraMay Computer Maintenance Services (YCMS).
+                    Ramon "Ike" Señeres, former member of the Board of Directors of Philippine Charity Sweepstakes Office (PCSO); and Ferdenand "Ibraheem" Lawag Sabado, the manager of YaraMay Computer Maintenance Services (YCMS).
                     .</p>
             </div>
 

@@ -1,6 +1,6 @@
 <dialog id="co_founder_modal"  class="modal">
     <div class="modal-box w-11/12 max-w-5xl">
-      <h3 class="font-bold text-lg">Ferdinand (Ibraheem) Lawag Sabado </h3>
+      <h3 class="font-bold text-lg">Ferdenand (Ibraheem) Lawag Sabado </h3>
       <ul class="py-4" type="circle">
         <li>&#10066; The General Manager of Yaramay Computer Maintenance Services (YCMS)</li>
         <li>&#10066; Graduate of Bachelor of Science in Information Technology (BSIT)</li>
