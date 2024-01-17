@@ -157,7 +157,7 @@
         </div>
       </div>
 
-      <p class="text-xs text-gray-500">&copy; 2023. Media House Express. All rights reserved.</p>
+      <p class="text-xs text-gray-500">&copy; 2023. Yaramay. All rights reserved.</p>
       <hr>
       <p class="text-xs text-center text-gray-500">Designed & Developed by <a target="_blank" href="https://yaramay.com/">Yaramay</a></p>
 
