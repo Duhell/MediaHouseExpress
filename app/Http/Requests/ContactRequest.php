@@ -25,7 +25,8 @@ class ContactRequest extends FormRequest
             'Name'=>'nullable|max:255',
             'EmailAddress'=>'email|required',
             'PhoneNumber'=>'required|numeric',
-            'Message'=>'required'
+            'Message'=>'required',
+            'Location'=>'max:255'
         ];
     }
 }

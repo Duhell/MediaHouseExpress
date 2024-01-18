@@ -145,8 +145,8 @@
     </div>
     <dialog id="map_modal" class="modal">
         @php
-            $locationParts = explode('|',$data->Location);
-            list($country,$region,$postalCode,$city,$latitude,$longitude) =array_map('trim',$locationParts);
+            $locationParts = explode('|',$data->Coordinates);
+            list($latitude,$longitude) =array_map('trim',$locationParts);
         @endphp
         <div class="modal-box">
             <iframe class="w-full" height="250" frameborder="0" style="border:0" referrerpolicy="no-referrer-when-downgrade"
