@@ -145,14 +145,26 @@
     </div>
     <dialog id="map_modal" class="modal">
         @php
-            $locationParts = explode('|',$data->Coordinates);
-            list($latitude,$longitude) =array_map('trim',$locationParts);
+            $latitude = null;
+            $longitude = null;
+            if (strpos($data->Coordinates, '|') !== false) {
+                $locationParts = explode('|',$data->Coordinates);
+                list($latitude,$longitude) = array_map('trim',$locationParts);
+            }
         @endphp
+
+        @if($latitude == null || $longitude == null)
+        <div class="modal-box">
+            <p class="font-['inter'] text-lg">User didnt gave permission for location sharing.</p>
+        </div>
+
+        @else
         <div class="modal-box">
             <iframe class="w-full" height="250" frameborder="0" style="border:0" referrerpolicy="no-referrer-when-downgrade"
                 src="https://www.google.com/maps/embed/v1/place?key={{ env('APP_GOOGLE_MAP_API_KEY') }}&q={{ $latitude }},{{$longitude  }}" allowfullscreen>
             </iframe>
         </div>
+        @endif
         <form method="dialog" class="modal-backdrop">
           <button>close</button>
         </form>

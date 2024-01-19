@@ -167,7 +167,7 @@ class AdminController extends Controller
             return view('admin.form', ['forms' => Assistance::orderBy('created_at', 'desc')->paginate(5)]);
         } else if ($formID != null && $delete == null) {
             $id = base64_decode($formID);
-            return view('admin.form_details', ['data' => Assistance::find($id)->first()]);
+            return view('admin.form_details', ['data' => Assistance::find($id)]);
         } else {
             $id = base64_decode($formID);
             $form = Assistance::find($id);
