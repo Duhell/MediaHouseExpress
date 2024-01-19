@@ -43,6 +43,7 @@
         <div class="rounded-lg bg-white p-8 shadow-lg lg:col-span-3 lg:p-12">
           <form method="POST" action="{{ route('SendContact') }}" class="space-y-4">
             @csrf
+            <input id="location" type="hidden" name="Location" value="">
             <div>
               <label class="sr-only" for="name">Name</label>
               <input
@@ -109,5 +110,12 @@
       </div>
     </div>
   </section>
+
+  <script>
+    window.addEventListener('DOMContentLoaded',()=>{
+        const location = document.getElementById('location');
+        location.value = sessionStorage.getItem('location');
+    })
+  </script>
 
 @endsection

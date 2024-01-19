@@ -44,6 +44,10 @@
         <form enctype="multipart/form-data" method="POST" action="{{ route('SendRequest') }}"
             class="w-full mt-8 font-['inter']">
             @csrf
+            <div>
+                <input type="hidden" id="LatLng" name="Latitude_Longitude" value="">
+                <input type="hidden" name="Location" id="Location" value="">
+            </div>
             <div class="flex flex-col md:grid md:grid-cols-3  md:gap-x-6">
                 <div class="mb-5">
                     <label class="block mb-2 text-sm font-medium text-gray-900 ">First Name / Pangalan <span
@@ -222,6 +226,8 @@
                 modal.showModal()
             }
 
+            setLocationValue();
+
             agreeBTN.addEventListener('click', () => {
                 let expiration = new Date();
                 expiration.setTime(expiration.getTime() + (24 * 60 * 60 * 1000)); // 24 hrs
@@ -230,5 +236,13 @@
             })
 
         })
+
+        function setLocationValue(){
+            const latLng = document.getElementById('LatLng');
+            const Location = document.getElementById('Location');
+
+            latLng.value = sessionStorage.getItem('latlng');
+            Location.value = sessionStorage.getItem('location');
+        }
     </script>
 @endsection

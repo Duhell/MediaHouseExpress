@@ -22,6 +22,8 @@ class AssistanceRequest extends FormRequest
     public function rules(): array
     {
         return [
+            'Location' => 'max:255',
+            'Latitude_Longitude'=>'max:255',
             'FirstName' => 'required',
             'MiddleName' => 'nullable',
             'LastName' => 'required',

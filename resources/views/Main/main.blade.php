@@ -38,29 +38,27 @@
     @if (!Request::is('admin/login'))
         @include('FooterView')
     @endif
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>AOS.init();</script>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            const errorShow = document.getElementById('err');
-            const successShow = document.getElementById('success');
+        const errorShow = document.getElementById('err');
+        const successShow = document.getElementById('success');
 
-            const hideElements = () => {
-                if (errorShow) {
-                    errorShow.style.display = "none";
-                }
-                if (successShow) {
-                    successShow.style.display = "none";
-                }
-            };
-
-            if (errorShow || successShow) {
-                setTimeout(hideElements, 7000);
+        const hideElements = () => {
+            if (errorShow) {
+                errorShow.style.display = "none";
             }
-        });
-    </script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init();
+            if (successShow) {
+                successShow.style.display = "none";
+            }
+        };
+
+        if (errorShow || successShow) {
+            setTimeout(hideElements, 7000);
+        }
+    });
+
     </script>
 </body>
-
 </html>

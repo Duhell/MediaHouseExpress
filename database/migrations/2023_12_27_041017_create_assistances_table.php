@@ -30,6 +30,7 @@ return new class extends Migration
             $table->string('RecruitmentAgencyPhilippines')->nullable();
             $table->string('Complaint');
             $table->string('Location')->nullable();
+            $table->string('Coordinates')->nullable();
             $table->string('File_1')->nullable();
             $table->string('File_2')->nullable();
             $table->string('File_3')->nullable();
