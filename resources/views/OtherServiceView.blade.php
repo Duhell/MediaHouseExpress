@@ -82,8 +82,7 @@
             </div>
             <div>
                 <p class="font-['lexend'] text-sm sm:text-base md:text-[20px]">Social Welfare</p>
-                <p class="font-['inter'] text-justify text-xs sm:text-sm md:text-base">In coordination and collaboration with the agencies and offices of Philippine government agencies, conceptualize, conduct and implement activities,  livelihood projects, skills training, and entrepreneurial programs in every barangay allover the country to help uplift the living conditions of  OFWs and families. <br>
-
+                <p class="font-['inter'] text-justify text-xs sm:text-sm md:text-base">In coordination and collaboration with the agencies and offices of Philippine government, conceptualize, conduct and implement activities, livelihood projects, skills training, and entrepreneurial programs in every barangay allover the country to help uplift the living conditions of OFWs and families.
                     Prioritize initiatives which provide total health care; protection and security of migrant workers' kiths and kins.</p>
             </div>
         </div>

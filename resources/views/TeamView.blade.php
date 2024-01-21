@@ -1,4 +1,4 @@
-<section data-aos="fade-up" id="team" class="md:w-[1228px] px-5 md:px-0 w-full  min-h-min mx-auto mt-[150px] md:mt-[100px]">
+<section data-aos="fade-up" id="team" class="md:w-[1228px] px-5 md:px-0 w-full  min-h-min mx-auto mt-[200px] md:mt-[100px]">
     <div class="w-full text-center font-['lexend'] text-2xl md:text-[32px] font-bold">
         <p>Meet the Team</p>
     </div>
@@ -28,7 +28,7 @@
                 </p>
             </div>
 
-            <dl class="mt-6 flex items-center justify-between gap-4 sm:gap-6">
+            <dl class="mt-6 flex flex-wrap items-center justify-between gap-4 sm:gap-6">
                 <div class="flex flex-col-reverse">
                     <dt class="text-sm items-center flex gap-3 font-medium text-gray-600">
                         <a  href=""><iconify-icon icon="logos:facebook"  class="border rounded-full p-1 border-blue-600"></iconify-icon></a>
@@ -71,13 +71,12 @@
 
             <div class="mt-4">
                 <p class="w-full text-sm text-gray-500">
-                    General Manager of Yaramay Computer Maintenance Services. He is presently,
-                    working at the King Khalid Military City in the Kingdom of Saudi Arabia (KSA).
+                    General Manager of Yaramay Computer Maintenance Services. He is presently working at the King Khalid Military City in the Kingdom of Saudi Arabia (KSA).
 
                 </p>
             </div>
 
-            <dl class="mt-6 flex items-center justify-between gap-4 sm:gap-6">
+            <dl class="mt-6 flex flex-wrap items-center justify-between gap-4 sm:gap-6">
                 <div class="flex flex-col-reverse">
                     <dt class="text-sm items-center flex gap-3 font-medium text-gray-600">
                         <a  href=""><iconify-icon icon="logos:facebook" class="border rounded-full p-1 border-blue-600"></iconify-icon></a>
