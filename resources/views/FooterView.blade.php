@@ -14,7 +14,7 @@
           <ul class="mt-8 flex gap-6">
             <li>
               <a
-                href="/"
+                href="https://m.facebook.com/groups/1935359103456962/?ref=share&mibextid=NSMWBT"
                 rel="noreferrer"
                 target="_blank"
                 class="text-gray-700 transition hover:opacity-75"
@@ -143,14 +143,14 @@
               <li>
                 <P class="font-medium texl-lg">Location:</P>
                 <p  class="text-gray-700 transition hover:opacity-75"> OFW Serbisyo't Kooperatiba
-                    ni Tirso Nieva Paglicawan
+                    ni Tirso Nieva Paglicawan <br>
                     Media House Express
                     LG03, Globe Telecom Plaza Tower 2, Madison Street, Mandaluyong City, Metro Manila</p>
               </li>
 
               <li>
                 <p class="font-medium texl-lg">Postal Address:</p>
-                <p  class="text-gray-700 transition hover:opacity-75">Unit No. 4, Plaridel Masonic Temple Grand Lodge of the Philippines No. 1440 San Marcelino Street, Ermita, City of Manila Zip Code 1000
+                <p  class="text-gray-700 transition hover:opacity-75">Unit No. 4, Plaridel Masonic Temple Grand Lodge of the Philippines <br> No. 1440 San Marcelino Street, Ermita, City of Manila <br> Zip Code 1000 <br>
                     Care of: Mug Corporate Office
                     </p>
               </li>
@@ -162,9 +162,9 @@
               </li>
 
               <li>
-                <p class="font-medium texl-lg">Mobile Number:</p>
-                <a href="tel:09603134412" class="text-gray-700 transition hover:opacity-75">09603134412</a><br>
-                <a href="tel:09603134412" class="text-gray-700 transition hover:opacity-75">09182550953</a>
+                <p class="font-medium texl-lg">Mobile Phone Numbers:</p>
+                <a href="tel:09603134412" class="text-gray-700 transition hover:opacity-75">09603134412</a> and<br>
+                <a href="tel:09182550953" class="text-gray-700 transition hover:opacity-75">09182550953</a>
               </li>
 
             </ul>

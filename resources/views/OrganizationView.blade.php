@@ -6,19 +6,20 @@
         <div data-aos="fade-up" data-aos-duration="700" class="flex flex-col md:flex-row gap-y-3 md:gap-y-0 items-center md:gap-x-5">
             <div class="md:w-[1177px] font-['inter'] text-sm sm:text-base">
                 <p>OFW Serbisyo't Kooperatiba is a public service online platform via FB as of 24 Oct 2017 as initiated by Tirso Nieva Paglicawan, Jr.</p><br>
+                <p>In May 2023, it was launched as a podcast program over Media House Express (MHE).</p><br>
                 <p>The talkshow caters and is declared to be entirely dedicated and specially devoted to Filipino migrant workers and their families wherever on earth who are in dire need of assistance and help. Victory stories of OFWs and family members are shown to encourage and inspire fellow Filipinos. This program also is a forum by, of and for cooperatives and peoples' organizations to promote the associations and the members.</p>
             </div>
         </div>
 
         <div data-aos="fade-up" data-aos-duration="1000" class="flex flex-col md:flex-row gap-y-1 md:gap-y-0 items-center md:gap-x-5">
             <div class="md:w-[1177px] font-['inter'] text-sm sm:text-base">
-                <p>OFW Serbisyo't Kooperatiba had already known/ solved the labyrinth, maze or puzzle of migration of Filipino workforce, therefore it is capable and equipped of affiliations/ networks, experiences, education and knowhow to provide solutions to challenges and hurdles face by OFWs and families. Further, via systematic monitoting of OFWs/ families, it thus shall give the needed boost, push and sustained support to the industry of manning agencies, both local and foreign recruitment agencies which engaged and involved themselves in the employment and deployment of land-based or sea-based skilled, non-skilled, professional, or non-professional migrant workers allover the globe.</p>
+                <p>OFW Serbisyo't Kooperatiba had already known/ solved the labyrinth, maze or puzzle of migration of Filipino workforce, therefore it is capable and equipped of affiliations/ networks, experiences, education and know how to provide solutions to challenges and hurdles face by OFWs and families. Further, via systematic monitoring of OFWs/ families, it thus shall give the needed boost, push and sustained support to the industry of manning agencies, both local and foreign recruitment agencies which engaged and involved themselves in the employment and deployment of land-based or sea-based skilled, non-skilled, professional, or non-professional migrant workers all over the globe.</p>
             </div>
         </div>
 
         <div data-aos="fade-up" data-aos-duration="1300" class="flex flex-col md:flex-row gap-y-3 md:gap-y-0 items-center md:gap-x-5">
             <div class="md:w-[1177px] font-['inter'] text-sm sm:text-base">
-                <p>Therefore, it readily is available and capable to help OFWs who are badly in need of assistance/ help and support. In this regard, OFW Serbisyo' t Kooperatiba will coordinate, communicate and serve as intermediary with responsible officials and personnel of agencies and offices of Philippine government to make sure that OFWs and family members' interests, rights and welfare are continuously promoted, protected and safeguarded.</p>
+                <p>Therefore, it readily is available and capable to help OFWs who are badly in need of assistance/ help and support. In this regard, OFW Serbisyo't Kooperatiba will coordinate, communicate and serve as intermediary with responsible officials and personnel of agencies and offices of Philippine government to make sure that OFWs and family members' interests, rights and welfare are continuously promoted, protected and safeguarded.</p>
             </div>
         </div>
     </div>
