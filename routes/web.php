@@ -9,7 +9,7 @@ Route::get("/request-assistance",[\App\Http\Controllers\ContactController::class
 Route::post("/request-assistance",[\App\Http\Controllers\ContactController::class,'send_request'])->name('SendRequest');
 Route::get("/membership",[\App\Http\Controllers\ContactController::class,'membership'])->name('membership')->middleware('visit');
 Route::post("/membership",[\App\Http\Controllers\ContactController::class,'send_membership'])->name('SendMembership');
-Route::get("/articles",\App\Http\Controllers\ArticleController::class);
+Route::get("/articles/{article_id?}",\App\Http\Controllers\ArticleController::class)->name('articles');
 
 
 //================= Admin Routes =======================//
@@ -25,3 +25,4 @@ Route::get('/admin/account',[\App\Http\Controllers\AdminController::class,'accou
 Route::patch('/admin/account/{adminID}',[\App\Http\Controllers\AdminController::class,'updateAccount'])->middleware("auth")->name('updateAccount');
 Route::get('/admin/episodes/{delete?}/{delete_id?}',[\App\Http\Controllers\AdminController::class,'episodes'])->middleware("auth")->name('episodes');
 Route::post('/admin/episodes',[\App\Http\Controllers\AdminController::class,'add_episode'])->middleware("auth")->name('add_episode');
+Route::get('/admin/membership/{member_id?}/{delete?}',[\App\Http\Controllers\AdminController::class,'membership'])->middleware("auth")->name('admin_membership');

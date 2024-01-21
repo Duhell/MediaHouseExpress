@@ -1,4 +1,5 @@
 @extends('Main.main')
+@section('title', 'Assistance | OFW Serbisyo Kooperatiba')
 @section('contents')
     @if (session('success'))
         <div id="success" class="toast z-50 font-['inter'] toast-top toast-center">
