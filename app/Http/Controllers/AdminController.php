@@ -8,6 +8,7 @@ use App\Models\Inbox;
 use App\Models\Visit;
 use App\Models\Assistance;
 use App\Models\Episode;
+use App\Models\Member;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Auth;
@@ -58,7 +59,7 @@ class AdminController extends Controller
         $currentMonth = date('m');
         $lastMonth = date('m', strtotime('last month'));
         $totalVisits = Visit::count();
-        $paginatedVisitors = Visit::orderBy('created_at','desc')->paginate(5);
+        $paginatedVisitors = Visit::orderBy('created_at', 'desc')->paginate(5);
         $currentMonthVisitors = Visit::whereMonth('created_at', $currentMonth)->count();
         $lastMonthVisitors = Visit::whereMonth('created_at', $lastMonth)->count();
         if ($lastMonthVisitors == 0) {
@@ -178,12 +179,12 @@ class AdminController extends Controller
 
     public function searchForm(Request $request)
     {
-        if($request->value != ""){
+        if ($request->value != "") {
             return view('admin.tables.Form', [
-            'data' => Assistance::where('FirstName', 'like', '%' . $request->value . '%')
-                ->orWhere('MiddleName', 'like', '%' . $request->value . '%')
-                ->orWhere('LastName', 'like', '%' . $request->value . '%')
-                ->orderBy('created_at', 'desc')->get()
+                'data' => Assistance::where('FirstName', 'like', '%' . $request->value . '%')
+                    ->orWhere('MiddleName', 'like', '%' . $request->value . '%')
+                    ->orWhere('LastName', 'like', '%' . $request->value . '%')
+                    ->orderBy('created_at', 'desc')->get()
             ]);
         }
     }
@@ -192,17 +193,42 @@ class AdminController extends Controller
     //===================== END FORMS ==================================//
 
 
+    //===================== MEMBERSHIP ==================================//
+
+    public function membership(?string $member_id = null, ?bool $delete = false)
+    {
+        if ($member_id == null) {
+            return view('admin.membership')->with(['data' => Member::orderBy('created_at', 'desc')->paginate(5)]);
+        }
+
+        $data = Member::where('member_id', $member_id);
+
+        if ($delete) {
+            $data->delete();
+            return redirect()->route('admin_membership')->with(['success' => "Delete Success"]);
+        }
+
+        return view('admin.membership_details')->with(['data' => $data->first()]);
+    }
+
+
+
+
+
+    //===================== END MEMBERSHIP ==================================//
+
+
 
     //===================== EPISODES ==================================//
 
     public function episodes(string $delete = null, string $delete_id = null)
     {
-        if($delete === null && $delete_id === null){
-            $data = Episode::orderBy('created_at','desc')->get();
-            return view('admin.episodes',compact('data'));
+        if ($delete === null && $delete_id === null) {
+            $data = Episode::orderBy('created_at', 'desc')->get();
+            return view('admin.episodes', compact('data'));
         }
 
-        if($delete == "delete" && $delete_id != ""){
+        if ($delete == "delete" && $delete_id != "") {
             $id = base64_decode($delete_id);
             return $this->delete_episode($id);
         }
@@ -211,34 +237,33 @@ class AdminController extends Controller
     public function add_episode(Request $request)
     {
         $validateRequest = $request->validate([
-           'title'=>"required|max:255",
-           'yt_url'=>"required"
+            'title' => "required|max:255",
+            'yt_url' => "required"
         ]);
 
-        try{
+        try {
             $new_episode = new Episode;
             $new_episode->fill($validateRequest);
             $new_episode->save();
             return back()->with(['success' => 'New episode added!']);
-        }catch(Exception $error){
+        } catch (Exception $error) {
             Log::error($error->getMessage(), [
                 'line' => $error->getLine(),
                 'file' => $error->getFile()
             ]);
         }
-
     }
 
     private function delete_episode(string $delete_id)
     {
-        try{
+        try {
             $episode = Episode::find($delete_id);
-            if(!$episode){
+            if (!$episode) {
                 return back()->withErrors(['error' => 'Failed to delete!']);
             }
             $episode->delete();
             return back()->with(['success' => 'Delete Success!']);
-        }catch(Exception $error){
+        } catch (Exception $error) {
             Log::error($error->getMessage(), [
                 'line' => $error->getLine(),
                 'file' => $error->getFile()

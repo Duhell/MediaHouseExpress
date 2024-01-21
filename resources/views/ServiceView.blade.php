@@ -1,9 +1,9 @@
 <section id="services" class="lg:w-[1228px] w-full min-h-min mx-auto mt-[36px] md:mt-[69px]">
-    <div data-aos="fade-up" class="text-center mb-[48px] md:mb-[73px]">
+    <div data-aos="fade-up" class="text-center px-5 mb-[48px] md:mb-[73px]">
         <p class="font-['lexend'] text-[24px] md:text-[36px] text-[#333]">Our Services</p>
-        <p class="font-['inter'] text-xs md:text-sm max-w-xl mx-auto">We are dedicated and devoted to provide assistance, guidance, essential support and protection to OFWs and their family members elsewher in the world.</p>
+        <p class="font-['inter'] text-xs md:text-sm max-w-xl mx-auto">Thus declared, we are dedicated and devoted to provide assistance, guidance, essential support and protection to OFWs and their family members elsewhere in the world.</p>
     </div>
-    <div data-aos="fade-up" class="grid gap-y-5 md:gap-y-12 place-items-center grid-cols-1 lg:grid-cols-2">
+    <div data-aos="fade-up" class="grid md:gap-x-8  gap-y-5 md:gap-y-12 place-items-center grid-cols-1 lg:grid-cols-2">
         <div class="card shadow-xl rounded-lg flex flex-col items-center px-[22px] py-[24px] md:py-[45px] w-full h-auto md:min-h-min">
             <div class="icon">
                 <svg width="66" height="72" viewBox="0 0 66 72" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -17,7 +17,7 @@
             </div>
             <div class="font-['inter'] text-[#333] mt-[24px] text-center">
                 <p class="font-semibold font-['lexend'] text-sm sm:text-sm md:text-base lg:text-[20px] mb-[24px]">Provide Monitoring </p>
-                <p class="font-['inter'] text-xs sm:text-sm md:text-base">We monitor the conditions, situations and locations of OFWs whose contracts end or are terminated and those who are without contracts. We also shall keep tract our undocumented countrymen anywhere in the globe.</p>
+                <p class="font-['inter'] text-justify text-xs sm:text-sm md:text-base">We monitor the conditions, situations and locations of OFWs whose contracts end or are terminated and those who are without contracts. We also shall keep tract our undocumented countrymen anywhere in the globe.</p>
             </div>
 
         </div>
@@ -42,7 +42,7 @@
             </div>
             <div class="font-['inter'] text-[#333] mt-[24px] text-center">
                 <p class="font-semibold font-['lexend'] text-sm sm:text-sm md:text-base lg:text-[20px] mb-[24px]">Provide Evidence  </p>
-                <p class="font-['inter'] text-xs sm:text-sm md:text-base">We help OFWs - victims of of maltreatment, abuse and and exploitation ( MAE) collate, gather, obtain and secure materials and other documentary evidences which shall be made bases and references in timely filing of legitimate monetary claims and other benefits; and in lodging appropriate cases against individuals who or institutions which commit MAE, human rights violations and other crimes.</p>
+                <p class="font-['inter'] text-justify text-xs sm:text-sm md:text-base">We help OFWs - victims of maltreatment, abuse and exploitation (MAE) collate, gather, obtain and secure materials and other documentary evidences which shall be made bases and references in the timely filing of legitimate monetary claims and other benefits; and in lodging appropriate civil or criminal cases against individuals who or institutions which commit MAE, human rights violations and other crimes.</p>
             </div>
 
         </div>
@@ -66,7 +66,7 @@
             </div>
             <div class="font-['inter'] text-[#333] mt-[24px] text-center">
                 <p class="font-semibold font-['lexend'] text-sm sm:text-sm md:text-base lg:text-[20px] mb-[24px]">Provide Rescue   </p>
-                <p class="font-['inter'] text-xs sm:text-sm md:text-base">To request the officials and employees of agencies and offices of Philippine government and other countries to conduct rescue missions and operations as needs arise.</p>
+                <p class="font-['inter'] text-justify text-xs sm:text-sm md:text-base">To request the officials and employees of agencies and offices of Philippine government and other countries to conduct rescue missions and operations as needs arise.</p>
             </div>
 
         </div>
@@ -80,7 +80,7 @@
             </div>
             <div class="font-['inter'] text-[#333] mt-[24px] text-center">
                 <p class="font-semibold font-['lexend'] text-sm sm:text-sm md:text-base lg:text-[20px] mb-[24px]">Provide Protection </p>
-                <p class="font-['inter'] text-xs sm:text-sm md:text-base">To provide protection, security and shelter first and foremost to Filipino migrant workers via determination of which agencies they belong and who are their respective employers.</p>
+                <p class="font-['inter'] text-justify text-xs sm:text-sm md:text-base">To provide protection, security and shelter first and foremost to Filipino migrant workers via determination of which agencies they belong and who are their respective employers.</p>
             </div>
 
         </div>
@@ -93,7 +93,7 @@
             </div>
             <div class="font-['inter'] text-[#333] mt-[24px] text-center">
                 <p class="font-semibold font-['lexend'] text-sm sm:text-sm md:text-base lg:text-[20px] mb-[24px]">Provide Records </p>
-                <p class="font-['inter'] text-xs sm:text-sm md:text-base">To provide information and necessary records either audio and video files and other media which shall be utilized for legal purposes and other relative undertakings.</p>
+                <p class="font-['inter'] text-justify text-xs sm:text-sm md:text-base">To provide information and necessary records either audio and video files and other media which shall be utilized for legal purposes and other relative undertakings.</p>
             </div>
 
         </div>
@@ -116,7 +116,7 @@
             </div>
             <div class="font-['inter'] text-[#333] mt-[24px] text-center">
                 <p class="font-semibold font-['lexend'] text-sm sm:text-sm md:text-base lg:text-[20px] mb-[24px]">To Alarm </p>
-                <p class="font-['inter'] text-xs sm:text-sm md:text-base">To alarm or give signal to concerned officials and personnel of agencies or offices of Philippine government to advise and notify them of problems encountered and miserable situations being experienced by OFWs.</p>
+                <p class="font-['inter'] text-justify text-xs sm:text-sm md:text-base">To give signal to concerned officials and personnel of agencies and offices of Philippine government; provide them advice/ advisory and timely notify them of the nature of problems and difficult situations that the OFWs are encountering or being experienced.</p>
             </div>
 
         </div>

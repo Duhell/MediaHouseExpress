@@ -4,7 +4,7 @@
     <div class="h-full relative w-full md:w-[1228px] mx-auto">
         <div data-aos="fade-up" class="absolute h-full top-[174px] ">
             <p class="font-['lexend'] mb-[33px] md:w-[399px] w-full leading-tight text-[32px] md:text-[48px] font-bold text-white">OFW Serbisyo’t Kooperatiba</p>
-            <p class="font-['inter'] mb-[76px] md:w-[628px] w-full leading-tight text-sm md:text-base font-light text-white">OFW Serbisyo't Kooperatiba is a non-governmental organization (NGO) in the Philippines whose function is to help Manning Agencies with the deployment and monitoring of Overseas Filipino Workers. Skilled, non-skilled, professional, or non-professional, whatever your occupation may be, OFW Serbisyo't Kooperatiba is here to lend a helping hand.</p>
+            <p class="font-['inter'] text-justify md:text-left mb-[76px] md:w-[628px] w-full leading-tight text-sm md:text-base font-light text-white">An online public service  platform and at the same time, a podcast program is a non-governmental organization (NGO) [for registration at Philippine Securities and Exchange Commission (SEC)] is aimed to comprehensively and effectively help manning agencies both land-based and sea-based to best monitor their respective deployed and employed Filipino migrant workers.</p>
 
             <a class="md:px-[5em] md:py-[1em] px-[3em] py-[.5em] font-semibold  rounded-sm bg-[#ECEAEA] text-center" href="#learn_more">Learn More</a>
         </div>

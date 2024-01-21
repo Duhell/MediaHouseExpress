@@ -1,10 +1,10 @@
-<section class="lg:w-[1228px] w-full px-[76px] mx-auto mt-[60px] md:mt-[127px]">
+<section class="lg:w-[1228px] w-full px-5 md:px-[76px] mx-auto mt-[60px] md:mt-[127px]">
     <div data-aos="fade-up" class="text-center mb-[46px] md:mb-[73px]">
         <p class="font-['lexend'] text-2xl md:text-[36px] text-[#333]">Other Services</p>
         <p class="font-['inter'] mt-2 text-xs md:text-sm">We provide essential support for OFWs abroad</p>
     </div>
 
-    <div data-aos="fade-up" class="grid gap-y-[58px] gap-5 place-items-center grid-cols-1 lg:grid-cols-2">
+    <div data-aos="fade-up" class="grid gap-[32px]  md:gap-[58px] place-items-center grid-cols-1 lg:grid-cols-2">
         <div class="longCard  w-full flex gap-x-5 items-center">
             <div class="icon hidden md:block">
                 <svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -20,7 +20,7 @@
             </div>
             <div>
                 <p class="font-['lexend'] text-sm sm:text-base md:text-[20px]">Legal Advice</p>
-                <p class="font-['inter'] text-xs sm:text-sm md:text-base">For both labor and non-labor related problems.</p>
+                <p class="font-['inter'] text-justify text-xs sm:text-sm md:text-base">For both labor and non-labor related problems.</p>
             </div>
         </div>
 
@@ -46,7 +46,7 @@
             </div>
             <div>
                 <p class="font-['lexend'] text-sm sm:text-base md:text-[20px]">Translator</p>
-                <p class="font-['inter'] text-xs sm:text-sm md:text-base">English or Arabic languages for OFWs and family members; foreign employers, thr officers and employees of recruitment agencies; and officials and personnel of Philippine and other countries' governments.</p>
+                <p class="font-['inter'] text-justify text-xs sm:text-sm md:text-base">English or Arabic languages for OFWs and family members; foreign employers, the officers and employees of recruitment agencies; and officials and personnel of Philippine and other countries' governments.</p>
             </div>
         </div>
 
@@ -63,7 +63,7 @@
             </div>
             <div>
                 <p class="font-['lexend'] text-sm sm:text-base md:text-[20px]">Contact Anytime</p>
-                <p class="font-['inter'] text-xs sm:text-sm md:text-base">For twenty four hours, seven days (24/7) Help Hotline is available to accommodate calls or short messaging system (SMS) for request of immediate assistance and support.</p>
+                <p class="font-['inter'] text-justify text-xs sm:text-sm md:text-base">For twenty four hours, seven days (24/7) a week, the Help Hotline is available to accept and accommodate phone calls, short messaging system (SMS) or text messages and via other online platforms such as through Facebook (FB) messenger, Viber, WhatsApp, TikTok, email correspondence and the likes for requests for immediate assistance and support.</p>
             </div>
         </div>
 
@@ -82,7 +82,9 @@
             </div>
             <div>
                 <p class="font-['lexend'] text-sm sm:text-base md:text-[20px]">Social Welfare</p>
-                <p class="font-['inter'] text-xs sm:text-sm md:text-base">Collaborate with Philippine government agencies for migrant worker welfare, implementing nationwide livelihood projects, skills training, and entrepreneurial programs in barangays. Prioritize total care and empathy for communities.</p>
+                <p class="font-['inter'] text-justify text-xs sm:text-sm md:text-base">In coordination and collaboration with the agencies and offices of Philippine government agencies, conceptualize, conduct and implement activities,  livelihood projects, skills training, and entrepreneurial programs in every barangay allover the country to help uplift the living conditions of  OFWs and families. <br>
+
+                    Prioritize initiatives which provide total health care; protection and security of migrant workers' kiths and kins.</p>
             </div>
         </div>
 
@@ -94,7 +96,7 @@
             </div>
             <div>
                 <p class="font-['lexend'] text-sm sm:text-base md:text-[20px]">Translation</p>
-                <p class="font-['inter'] text-xs sm:text-sm md:text-base">Legal document translation.</p>
+                <p class="font-['inter'] text-justify text-xs sm:text-sm md:text-base">Legal document translation.</p>
             </div>
         </div>
     </div>

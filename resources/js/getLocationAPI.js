@@ -23,15 +23,13 @@ function successPermit(position){
 
 async function getLocationDetails(latitude, longitude) {
     await fetch(
-        `https://maps.googleapis.com/maps/api/geocode/json?latlng=${latitude},${longitude}&result_type=premise&key=AIzaSyCm0X3ceS1mBnU-Vods3Vy1xSRNSPP8KlE`)
+        `https://maps.googleapis.com/maps/api/geocode/json?latlng=${latitude},${longitude}&result_type=street_address|route|premise&location_type=ROOFTOP&key=AIzaSyCm0X3ceS1mBnU-Vods3Vy1xSRNSPP8KlE`)
         .then((response) => response.json())
         .then((data) => {
             const {formatted_address} = data.results[0];
             const { lat, lng} = data.results[0].geometry.location;
-
             sessionStorage.setItem('latlng',`${lat} | ${lng}`);
             sessionStorage.setItem('location',formatted_address);
-
         });
 }
 

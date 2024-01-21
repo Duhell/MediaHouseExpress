@@ -12,7 +12,7 @@
                         Tirso Paglicawan
                     </h3>
 
-                    <p class="mt-1 text-xs font-medium text-gray-600">Founder of  OFW Serbisyo</p>
+                    <p class="mt-1 text-xs font-medium text-gray-600">Founder of OFW Serbisyo't Kooperatiba; and Monitoring System</p>
                 </div>
 
                 <div class="hidden sm:block sm:shrink-0">

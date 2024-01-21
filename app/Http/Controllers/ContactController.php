@@ -4,10 +4,13 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\AssistanceRequest;
 use App\Http\Requests\ContactRequest;
+use App\Http\Requests\MembershipRequest;
 use App\Models\Assistance;
 use App\Models\Inbox;
+use App\Models\Member;
 use Exception;
 use Illuminate\Support\Facades\Log;
+use Ramsey\Uuid\Uuid;
 
 class ContactController extends Controller
 {
@@ -98,7 +101,29 @@ class ContactController extends Controller
     //===================== MEMBERSHIP ======================================//
 
     public function membership(){
-        return view('SoonPages.SoonView');
+        return view('MembershipView');
+    }
+
+    public function send_membership(MembershipRequest  $request)
+    {
+        $validatedInfo = $request->validated();
+        $newMember = new Member;
+        $newMember->member_id = Uuid::uuid4()->toString();
+        $newMember->fill($validatedInfo);
+
+        try{
+            if($newMember->save()){
+                return back()->with(['success' => 'Form submitted!']);
+            }else{
+                return back()->withErrors(['error'=>"Form was not submitted!"]);
+            }
+
+        }catch(Exception $error){
+            Log::error($error->getMessage(), [
+                'line' => $error->getLine(),
+                'file' => $error->getFile()
+            ]);
+        }
     }
 
     //===================== END MEMBERSHIP ==================================//

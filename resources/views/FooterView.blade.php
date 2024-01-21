@@ -8,7 +8,7 @@
           </div>
 
           <p class="mt-4 max-w-xs text-xs text-[#333]">
-            OFW Serbisyo't Kooperatiba is a non-governmental organization (NGO) in the Philippines whose function is to help Manning Agencies with the deployment and monitoring of Overseas Filipino Workers.
+            OFW Serbisyo't Kooperatiba, an online public service  platform and at the same time, a podcast program is a non-governmental organization (NGO) [for registration at Philippine Securities and Exchange Commission (SEC)] is aimed to comprehensively and effectively help manning agencies both land-based and sea-based to best monitor their respective deployed and employed Filipino migrant workers.
           </p>
 
           <ul class="mt-8 flex gap-6">
@@ -78,7 +78,7 @@
           </ul>
         </div>
 
-        <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:col-span-2 lg:grid-cols-4">
+        <div class="flex flex-wrap sm:grid  gap-8 sm:grid-cols-2 lg:col-span-2 lg:grid-cols-4">
           <div>
             <p class="font-medium text-gray-900">Explore</p>
 
@@ -141,15 +141,30 @@
 
             <ul class="mt-6 space-y-4 text-sm">
               <li>
-                <p  class="text-gray-700 transition hover:opacity-75"> Manila Office Address c/o MUG CORPORATE OFFICE: Unit #4, Plaridel Masonic Temple Grand Lodge of the Philippines 1440 San Marcelino St., Ermita, Manila 1000 </p>
+                <P class="font-medium texl-lg">Location:</P>
+                <p  class="text-gray-700 transition hover:opacity-75"> OFW Serbisyo't Kooperatiba
+                    ni Tirso Nieva Paglicawan
+                    Media House Express
+                    LG03, Globe Telecom Plaza Tower 2, Madison Street, Mandaluyong City, Metro Manila</p>
               </li>
 
               <li>
-                <a href="mailto:Sab_princes@yahoo.com" target="_blank" class="text-gray-700 transition hover:opacity-75"> Sab_princes@yahoo.com </a>
+                <p class="font-medium texl-lg">Postal Address:</p>
+                <p  class="text-gray-700 transition hover:opacity-75">Unit No. 4, Plaridel Masonic Temple Grand Lodge of the Philippines No. 1440 San Marcelino Street, Ermita, City of Manila Zip Code 1000
+                    Care of: Mug Corporate Office
+                    </p>
               </li>
 
               <li>
-                <a href="tel:+639182550953" class="text-gray-700 transition hover:opacity-75">+639182550953 </a>
+                <p class="font-medium texl-lg">Email:</p>
+                <a href="mailto:tirsonievapaglicawanjr@gmail.com" target="_blank" class="text-gray-700 transition hover:opacity-75"> tirsonievapaglicawanjr@gmail.com</a><br>
+                <a href="mailto:Sab_princes@yahoo.com" target="_blank" class="text-gray-700 transition hover:opacity-75"> Sab_princes@yahoo.com</a>
+              </li>
+
+              <li>
+                <p class="font-medium texl-lg">Mobile Number:</p>
+                <a href="tel:09603134412" class="text-gray-700 transition hover:opacity-75">09603134412</a><br>
+                <a href="tel:09603134412" class="text-gray-700 transition hover:opacity-75">09182550953</a>
               </li>
 
             </ul>

@@ -1,4 +1,5 @@
 @extends('Main.main')
+@section('title', 'OFW Serbisyo Kooperatiba')
 @section('contents')
 @include('HeroView')
 @include('LearnMoreView')

@@ -14,7 +14,7 @@
         <div class="lg:py-24">
           <h2 class="text-3xl font-bold sm:text-4xl">OFW Serbisyo't Kooperatiba</h2>
 
-          <p class="mt-4 text-gray-600 font-['inter'] font-light">
+          <p class="mt-4 text-justify text-gray-600 font-['inter'] font-light">
             OFW Serbisyo't Kooperatiba considerably and practically understands the nature of business of manning agencies, both local and foreign recruitment agencies which are primarily and principally engaged and involved in the employment and deployment of land-based and sea-based skilled, non-skilled, professional, or non-professional migrant workers all over the globe.
           </p>
         </div>
@@ -36,7 +36,7 @@
         <div class="lg:py-24">
           <h2 class="text-3xl font-bold sm:text-4xl">Readily Available</h2>
 
-          <p class="mt-4 text-gray-600 font-['inter'] font-light">
+          <p class="mt-4 text-justify text-gray-600 font-['inter'] font-light">
             It is this premise that OFW Serbisyo't Kooperatiba shall make itself readily available to extend and lend a helping hand to OFWs and their family members who are in need of assistance; it will coordinate, communicate and serve as bridge or intermediary with concerned officials and personnel of agencies and offices of Philippine government to make sure that OFWs and family members' interests, rights and welfare are surely promoted, completely protected and sustainably safeguarded.
           </p>
         </div>

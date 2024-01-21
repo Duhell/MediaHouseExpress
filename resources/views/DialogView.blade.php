@@ -1,7 +1,7 @@
 <dialog id="co_founder_modal"  class="modal">
     <div class="modal-box w-11/12 max-w-5xl">
       <h3 class="font-bold text-lg">Ferdenand (Ibraheem) Lawag Sabado </h3>
-      <ul class="py-4" type="circle">
+      <ul class="py-4 text-sm md:text-base text-justify">
         <li>&#10066; The General Manager of Yaramay Computer Maintenance Services (YCMS)</li>
         <li>&#10066; Graduate of Bachelor of Science in Information Technology (BSIT)</li>
         <li>&#10066; Further, he studied in College of Criminology </li>
@@ -22,17 +22,17 @@
   <dialog id="ceo_modal"  class="modal">
     <div class="modal-box w-11/12 max-w-5xl overflow-y-auto">
       <h3 class="font-bold text-lg">Tirso Paglicawan</h3>
-      <ul class="py-4">
-        <li>&#10066; From a poor family, he hurdled much challenges early in life. Yearning to study high school, he took the Philippine Coconut Producers Federation Inc. (COCOFED) scholarship examination held at Pinamalayan, Oriental Mindoro in 1977 and emerged as no. 1 topnotcher, he then was able to study high school from year 1977 to 1981 in Immaculate Heart of Maty Academy (IHMA) as a COCOFED scholar.</li>
-        <li>&#10066; While 4th year student in school year 1980 - 1981, he was the editor of The Ihmanians' Gazette, the official publication of IHMA.</li>
+      <ul class="py-4 text-sm md:text-base text-justify">
+        <li>&#10066; From a poor family, he hurdled much challenges early in life. Yearning to study high school, he took the Philippine Coconut Producers Federation Inc. (COCOFED) scholarship examination held at Pinamalayan, Oriental Mindoro in 1977 when and where he emerged as the no. 1 topnotcher. He was a COCOFED scholar on the entire duration of his high school study from year 1977 to 1981 in the Immaculate Heart of Maty Academy (IHMA).</li>
+        <li>&#10066; While a 4th year high school student in school year 1980 - 1981, he was the  editor of The Ihmanians' Gazette, the official publication of IHMA.</li>
         <li>&#10066; Aside from being a consistent honor student, he also was adjudged as the most outstanding editor in 1981 during high school graduation </li>
         <li>&#10066; After graduation, he tried taking the Department of Education (DepEd) national state scholarship examination which was conducted in Calapan City, Or. Mindoro on 1981 and camevout as no. 1 topnotcher </li>
         <li>&#10066; He was a DepEd scholar from school year 1981 to 1982 when he took up Bachelor of Science in Civil Engineering (BSCE) course at the University of the East (UE). The following school year of 1982 to 1983, he was designated as editor of "Ang Silangan," the official publication of the University of the East (UE) central student council (CSC) the president of which then was Ben P. Evardone, later on was erstwhile governor and or congressman of the province of Eastern Samar  </li>
         <li>&#10066; He also passed the editorial examination conducted on same school year by the editorial staff of the Dawn, the official student publication of UE. </li>
         <li>&#10066; He also was a self - supporting student working at Agfacolor Laboratory and Photography Shops/ Stores in the City of Manila as messenger and collector from 1984 to 1985.</li>
         <li>&#10066; After the 1986 EDSA people power revolution in 1986, he started working as a casual employee at the central office of the Philippine Postal Corporation (PhlPost) in the City of Manila.</li>
-        <li>&#10066; Thereafter, from 1986 to 2010, he rose from the rank and became an Information Officer lV (salary grade 22) and chief, PhilPost Media and Public Affairs.</li>
-        <li>&#10066; As such chief of the PhilPost Media and Public Affairs, from 2095 - 2010, he was concurrently, the editor of The PhlPost Journal, the official publication of PhilPost.</li>
+        <li>&#10066; Thereafter, from 1986 to 2010, he rose from the ranks and became an Information Officer lV (salary grade 22) and chief, PhilPost Media and Public Affairs.</li>
+        <li>&#10066; As such chief of the PhilPost Media and Public Affairs, from 2005 - 2010, he was concurrently, the editor of The PhlPost Journal, the official publication of PhilPost.</li>
         <li>&#10066; He also was for five (5) years or from 2005 to 2010 the president of PhlPost Workers Union (PWU) Kapisanan ng mga Kawani ng Koreo sa Pilipinas (KKKP), an employees association allover the coubtry of rank-and-file employees of the state courier.</li>
         <li>&#10066; He was able to serve as corporate secretary of the Postal Services Mutual Benefits Association lnc. (PSMBAI) from 2005-2008 as he sustained his journalism work as a contributor, correspondent and or columnist of Abante Tonite tabloid and Pilipino Star Ngayon publication in 2005 and in other newspapers throughout to keep his membership at the National Press Club of the Philippines (NPC). On record, he was an active member of the NPC from 1989-2005.</li>
         <li>&#10066; In 2001, for the second time around, he passed the Civil Service Commission (CSC) local scholarship program.</li>
