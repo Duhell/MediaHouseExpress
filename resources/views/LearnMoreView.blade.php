@@ -1,4 +1,4 @@
-<section id="learn_more" class="md:w-[1228px] px-5 md:px-0 md:py-5 w-full min-h-min mx-auto mt-5">
+<section id="learn_more" class="md:w-[1228px] overflow-hidden px-5 md:px-0 md:py-5 w-full min-h-min mx-auto mt-5">
     <div data-aos="fade-up" class="text-base text-[#333] md:text-2xl font-['lexend']">
         <p>Learn More</p>
     </div>

@@ -20,13 +20,9 @@
     <dialog id="my_modal_4" class="modal font-['inter']">
         <div class="modal-box w-11/12 max-w-5xl">
             <h3 class="font-bold text-lg">Data Privacy and Usage Terms</h3>
-            <p class="py-4">As much as possible please provide all information requested. The local government confirms
-                that all information given is for the use of the local government only and not to be disseminated or
-                distributed to private individuals or corporation.
+            <p class="py-4 text-justify">As much as possible, please provide all of details/ information and particulars requested. "OFW Serbisyo't Kooperatiba" assures all concerned that all details/ information and particulars gathered/ entrusted are solely for the exclusive legal use of "OFW Serbisyo't Kooperatiba" only and not to be disseminated or distributed to any individual or institution.
             </p>
-            <p class="py-4">Hangga't maari ibigay ang impormasyong hinihingi. Sinisigurado ng local government na lahat ng
-                impormasyong ibibigay ay para lamang sa paggamit ng local government at hindi ipamimigay o ipamamahagi sa
-                mga pribadong indibidwal o korporasyon.</p>
+            <p class="py-4 text-justify">Hangga't maari, ibigay ang lahat ng mga detalye/  impormasyon at partikular na hinihingi/ kinakailangan. Sinisigurado ng "OFW Serbisyo't Kooperatiba" na ang lahat ng mga detalye/ impormasyon at partikular na inyong ibibigay/ ipagkakatiwala ay para lamang sa legal na paggamit ng "OFW Serbisyo't Kooperatiba" at hindi ipamimigay o ipapamahagi sa sinumang indibidwal o alinmang institusyon.</p>
             <div class="modal-action">
                 <form method="dialog">
                     <!-- if there is a button, it will close the modal -->

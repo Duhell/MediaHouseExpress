@@ -1,19 +1,19 @@
 @extends('admin.parts.layout')
 @section('title','Dashboard | OFW Serbisyo')
 @section('AdminContents')
-    <div class="bg-slate-50 overflow-y-auto w-full h-screen">
+    <div class="bg-slate-50 px-1 md:px-0 overflow-y-auto w-full h-screen">
         <div class="p-1 md:p-5 min-h-min font-['lexend']  w-full grid grid-cols-1 md:flex md:flex-wrap gap-x-0 gap-y-3 md:gap-y-0 md:gap-x-6">
             <div class="stats shadow grow">
                 <div class="stat">
                   <div class="stat-title text-xs md:text-base ">Welcome {{ Auth::user()->name }}</div>
-                  <div class="stat-value text-[#3f3e3e]">Dashboard</div>
+                  <div class="text-2xl font-bold md:stat-value text-[#3f3e3e]">Dashboard</div>
                 </div>
             </div>
             <div class="stats shadow">
 
                 <div class="stat">
                   <div class="stat-title">Total Forms</div>
-                  <div class="stat-value">{{ $assistance }}</div>
+                  <div class="text-2xl font-bold md:stat-value">{{ $assistance }}</div>
                   <div class="stat-desc">{{ $todayAssistance }}  {{ $todayAssistance > 1 ? "new forms":"form" }} today</div>
                 </div>
 
@@ -23,7 +23,7 @@
 
                 <div class="stat">
                   <div class="stat-title">Total Messages</div>
-                  <div class="stat-value">{{ $messages }}</div>
+                  <div class="text-2xl font-bold md:stat-value">{{ $messages }}</div>
                   <div class="stat-desc">{{ $todayMessages }}  {{ $todayMessages > 1 ? "new messages":"message" }} today</div>
                 </div>
 
@@ -33,7 +33,7 @@
 
                 <div class="stat">
                   <div class="stat-title">Total Page Views</div>
-                  <div class="stat-value">{{ $visitors }}</div>
+                  <div class="text-2xl font-bold md:stat-value">{{ $visitors }}</div>
                   <div class="stat-desc">{{ $percent }}% {{ $percent < 0 ? "decrease":"increase" }} than last month</div>
                 </div>
 

@@ -1,4 +1,4 @@
-<section class="w-full bg-[#F9F9F9]">
+<section class="w-full overflow-x-hidden bg-[#F9F9F9]">
     <div class="md:w-[1228px] w-full md:py-5 min-h-min mx-auto mt-[60px] md:mt-[120px]">
         <div class="grid  place-items-center gap-x-7 grid-cols-1 md:grid-cols-2">
             <div data-aos="fade-up" class="md:w-[455px] w-full  h-[317px]">

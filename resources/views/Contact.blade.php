@@ -26,7 +26,7 @@
       <div class="grid grid-cols-1 gap-x-16 gap-y-8 lg:grid-cols-5">
         <div class="lg:col-span-2 lg:py-12">
             <p class="max-w-xl text-3xl font-bold font-['lexend']">
-                Reach to us!
+                Please Reach Us!
             </p>
           <p class="max-w-xl text-base font-['inter']">
             Discovering, caring, understanding: making our way in new places with kindness. Helping, sharing, getting along: crossing borders to connect with others. Solving, cheering, connecting: turning worries into chances for worldwide friendship.
@@ -37,7 +37,10 @@
                 Location
             </p>
 
-            <address class="mt-2 not-italic">Manila Office Address c/o MUG CORPORATE OFFICE: Unit #4, Plaridel Masonic Temple Grand Lodge of the Philippines 1440 San Marcelino St., Ermita, Manila 1000</address>
+            <address class="mt-2 not-italic">FW Serbisyo't Kooperatiba
+                ni Tirso Nieva Paglicawan <br>
+                Media House Express
+                LG03, Globe Telecom Plaza Tower 2, Madison Street, Mandaluyong City, Metro Manila</address>
           </div>
         </div>
 
