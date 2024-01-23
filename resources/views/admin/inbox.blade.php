@@ -1,12 +1,12 @@
 @extends('admin.parts.layout')
 @section('title','Inbox | OFW Serbisyo')
 @section('AdminContents')
-    <div class="bg-slate-50 overflow-y-auto w-full h-screen">
+    <div class="bg-slate-50 px-1 md:px-0 overflow-y-auto w-full h-screen">
         <div class="md:p-5 min-h-min font-['lexend'] w-full flex flex-wrap md:gap-x-6">
-            <div class="stats flex shadow grow">
+            <div class="stats flex flex-col md:flex-row shadow grow">
                 <div class="stat">
                     {{-- <div class="stat-title">Welcome {{ Auth::user()->name }}</div> --}}
-                    <div class="stat-value">Inbox</div>
+                    <div class="text-2xl font-bold md:stat-value">Inbox</div>
                 </div>
                 <div class="stat flex">
                     <select id="sort_messages" name="sort_messages" class="select select-bordered w-full max-w-xs">
@@ -23,7 +23,7 @@
         </div>
 
         {{-- Message --}}
-        <div class="grid px-5 md:grid-cols-2 grid-cols-1 gap-6">
+        <div class="grid px-1 md:px-5 mt-6 md:mt-0 md:grid-cols-2 grid-cols-1 gap-6">
             <div class="bg-white rounded-md min-h-min w-full">
                 <div class="w-full p-4">
                     <p id="MessageHeader" class="font-['lexend'] text-lg">All Messages</p>

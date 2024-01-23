@@ -1,4 +1,4 @@
-<div class="p-4 w-full flex items-center justify-between gap-x-3">
+<div class="p-4 w-full flex flex-col md:flex-row md:items-center justify-between gap-x-3">
     <div>
         <span class="font-['lexend']">Message</span>
     </div>

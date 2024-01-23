@@ -28,7 +28,7 @@
             class="w-full mt-8 font-['inter']">
             @csrf
             <div class="flex flex-wrap sm:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-                <div class="divider col-span-full text-2xl font-bold font-['lexend'] my-10">Personal Information</div>
+                <div class="divider col-span-full text-base md:text-2xl font-bold font-['lexend'] my-10">Personal Information</div>
 
                 <div class="mb-5 w-full">
                     <label class="block mb-2 text-sm font-medium text-gray-900 ">Full Name of OFW<span
@@ -95,7 +95,7 @@
                 </div>
 
 
-                <div class="divider col-span-full text-2xl font-bold font-['lexend'] my-10">Information of Employer</div>
+                <div class="divider col-span-full text-base md:text-2xl font-bold font-['lexend'] my-10">Information of Employer</div>
 
 
                 <div class="mb-5 w-full">
@@ -131,7 +131,7 @@
                         placeholder="" required>
                 </div>
 
-                <div class="divider col-span-full text-2xl font-bold font-['lexend'] my-10">Recruitment Agency</div>
+                <div class="divider col-span-full text-base md:text-2xl font-bold font-['lexend'] my-10">Recruitment Agency</div>
 
                 <div class="mb-5 w-full col-span-2">
                     <label class="block mb-2 text-sm font-medium text-gray-900 ">Agency in the Philippines<span
@@ -181,7 +181,7 @@
                         placeholder="" required>
                 </div>
 
-                <div class="divider col-span-full text-2xl font-bold font-['lexend'] my-10">II</div>
+                <div class="divider col-span-full text-base md:text-2xl font-bold font-['lexend'] my-10">II</div>
 
                 <div class="mb-5 w-full">
                     <label class="block mb-2 text-sm font-medium text-gray-900 ">Next of Kin/ Kamag-anak ng OFW<span
