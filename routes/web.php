@@ -26,3 +26,8 @@ Route::patch('/admin/account/{adminID}',[\App\Http\Controllers\AdminController::
 Route::get('/admin/episodes/{delete?}/{delete_id?}',[\App\Http\Controllers\AdminController::class,'episodes'])->middleware("auth")->name('episodes');
 Route::post('/admin/episodes',[\App\Http\Controllers\AdminController::class,'add_episode'])->middleware("auth")->name('add_episode');
 Route::get('/admin/membership/{member_id?}/{delete?}',[\App\Http\Controllers\AdminController::class,'membership'])->middleware("auth")->name('admin_membership');
+Route::post('/admin/membership/search',[\App\Http\Controllers\AdminController::class,'search_membership'])->middleware("auth")->name('search_membership');
+Route::get('/admin/article/{create?}/{article_id?}',[\App\Http\Controllers\AdminController::class,'article'])->middleware("auth")->name('admin_article');
+Route::post('/admin/article',[\App\Http\Controllers\AdminController::class,'add_article'])->middleware("auth")->name('add_article');
+Route::patch('/admin/article/{uuid}',[\App\Http\Controllers\AdminController::class,'update_article'])->middleware("auth")->name('update_article');
+

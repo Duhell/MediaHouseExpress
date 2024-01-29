@@ -3,7 +3,7 @@
 @section('AdminContents')
     <div class="bg-slate-50 px-1 md:px-0 overflow-y-auto w-full h-screen">
         <div class="md:p-5 min-h-min font-['lexend'] w-full flex flex-wrap md:gap-x-6">
-            <div class="stats flex flex-col md:flex-row shadow grow">
+            <div class="stats relative before:absolute before:contents=[''] before:h-1 before:w-full before:top-0 before:bg-indigo-600 flex flex-col md:flex-row shadow grow">
                 <div class="stat">
                     {{-- <div class="stat-title">Welcome {{ Auth::user()->name }}</div> --}}
                     <div class="text-2xl font-bold md:stat-value">Inbox</div>

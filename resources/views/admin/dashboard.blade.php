@@ -2,9 +2,9 @@
 @section('title','Dashboard | OFW Serbisyo')
 @section('AdminContents')
     <div class="bg-slate-50 px-1 md:px-0 overflow-y-auto w-full h-screen">
-        <div class="p-1 md:p-5 min-h-min font-['lexend']  w-full grid grid-cols-1 md:flex md:flex-wrap gap-x-0 gap-y-3 md:gap-y-0 md:gap-x-6">
-            <div class="stats shadow grow">
-                <div class="stat">
+        <div class="p-1 md:p-5 min-h-min font-['lexend']   w-full grid grid-cols-1 md:flex md:flex-wrap gap-x-0 gap-y-3 md:gap-y-0 md:gap-x-6">
+            <div class="stats relative shadow grow before:absolute before:contents=[''] before:h-1 before:w-full before:top-0 before:bg-indigo-600">
+                <div class="stat ">
                   <div class="stat-title text-xs md:text-base ">Welcome {{ Auth::user()->name }}</div>
                   <div class="text-2xl font-bold md:stat-value text-[#3f3e3e]">Dashboard</div>
                 </div>
