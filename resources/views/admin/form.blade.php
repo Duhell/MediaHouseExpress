@@ -3,7 +3,7 @@
 @section('AdminContents')
     <div class="bg-slate-50 overflow-y-auto w-full h-screen">
         <div class="md:p-5 min-h-min relative font-['lexend'] w-full flex flex-wrap md:gap-x-6">
-            <div class="stats relative flex shadow grow">
+            <div class="stats relative flex shadow grow before:absolute before:contents=[''] before:h-1 before:w-full before:top-0 before:bg-indigo-600">
                 <div class="stat flex justify-between items-center">
                     <div class="stat-value">Request Assistance</div>
                     <button class="btn btn-sm" onclick="search_modal.showModal()"><svg xmlns="http://www.w3.org/2000/svg"

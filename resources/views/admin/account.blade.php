@@ -19,7 +19,7 @@
 @endif
 <div class="bg-slate-50 overflow-y-auto w-full h-screen">
     <div class="md:p-5 min-h-min font-['lexend'] w-full flex flex-wrap md:gap-x-6">
-        <div class="stats flex shadow grow">
+        <div class="stats flex shadow grow relative before:absolute before:contents=[''] before:h-1 before:w-full before:top-0 before:bg-indigo-600">
             <div class="stat">
                 <div class="stat-value">Manage Account</div>
             </div>

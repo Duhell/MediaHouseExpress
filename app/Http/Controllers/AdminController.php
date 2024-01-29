@@ -6,13 +6,17 @@ use Exception;
 use App\Models\User;
 use App\Models\Inbox;
 use App\Models\Visit;
-use App\Models\Assistance;
-use App\Models\Episode;
+use Ramsey\Uuid\Uuid;
 use App\Models\Member;
+use App\Models\Article;
+use App\Models\Episode;
+use App\Models\Assistance;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
+use App\Http\Requests\ArticleRequest;
+use Illuminate\Support\Facades\Storage;
 
 class AdminController extends Controller
 {
@@ -211,11 +215,110 @@ class AdminController extends Controller
         return view('admin.membership_details')->with(['data' => $data->first()]);
     }
 
+    public function search_membership(Request $request){
+        if ($request->value != "") {
+            return view('admin.tables.Membership', [
+                'data' => Member::where('FullName', 'like', '%' . $request->value . '%')
+                    ->orWhere('JobPosition', 'like', '%' . $request->value . '%')
+                    ->orderBy('created_at', 'desc')->get()
+            ]);
+        }
+    }
+
 
 
 
 
     //===================== END MEMBERSHIP ==================================//
+
+
+    //===================== ARTICLES ==================================//
+
+    public function article(?string $create = null, ?string $article_id = null)
+    {
+        if($create == "create" && $article_id === null){
+            return view ('admin.add_articles');
+        }else if($create == "edit" && $article_id != null){
+            $article = Article::where('article_uuid',$article_id)->first();
+            return view('admin.edit_article')->with('data',$article);
+        }else if($create == "delete" && $article_id != null){
+            $article = Article::where('article_uuid',$article_id)->first();
+            $article->delete();
+            return redirect()->route('admin_article')->with(['success' => "Article Deleted Successfully."]);
+        }else{
+            $articles = Article::orderBy('updated_at','desc')->paginate(10);
+            return view('admin.article')->with('articles',$articles);
+        }
+    }
+
+    public function add_article(ArticleRequest $request)
+    {
+        $validatedRequest = $request->validated();
+
+        $article = new Article;
+        $article->fill($validatedRequest);
+        $article->article_uuid = Uuid::uuid4();
+        $article->author_id = Auth::user()->id;
+        $article->article_author = Auth::user()->name;
+
+        if ($request->hasFile('article_img')) {
+            $file = $request->file('article_img');
+            $filename = $file->getClientOriginalName();
+
+            // Create directory structure
+            $directory = $article->article_author . '/';
+
+            // Save the file to the directory
+            $path = $file->storeAs($directory, $filename, 'public');
+
+            // Save the path to the article
+            $article->article_img = $path;
+        }
+
+        try{
+            $article->save();
+            return redirect()->route('admin_article')->with(['success' => "Article posted."]);
+        }catch(Exception $error){
+            Log::error($error->getMessage(), [
+                    'line' => $error->getLine(),
+                    'file' => $error->getFile()
+                ]);
+        }
+
+
+    }
+
+    public function update_article(ArticleRequest $request,string $uuid)
+    {
+        $validatedRequest = $request->validated();
+        $update = Article::where('article_uuid',$uuid)->first();
+        $update->fill($validatedRequest);
+
+        if ($request->hasFile('article_img')) {
+            // Delete the previous image
+            Storage::disk('public')->delete($update->article_img);
+
+            $file = $request->file('article_img');
+            $filename = $file->getClientOriginalName();
+
+            $directory = $update->article_author . '/';
+            $path = $file->storeAs($directory, $filename, 'public');
+            $update->article_img = $path;
+        }
+
+        try{
+            $update->update();
+            return redirect()->route('admin_article')->with(['success' => "Article Updated."]);
+        }catch(Exception $error){
+            Log::error($error->getMessage(), [
+                    'line' => $error->getLine(),
+                    'file' => $error->getFile()
+                ]);
+        }
+    }
+
+    //===================== END ARTICLES ==================================//
+
 
 
 
