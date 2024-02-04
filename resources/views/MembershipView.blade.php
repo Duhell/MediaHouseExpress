@@ -212,7 +212,7 @@
                             class="text-red-700">*</span></label>
                     <input type="text" name="AddressII"
                         class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  "
-                        placeholder="Complete name" required>
+                        placeholder="" required>
                 </div>
 
                 <div class="mb-5 w-full">
@@ -220,7 +220,7 @@
                             class="text-red-700">*</span></label>
                     <input type="email" name="EmailII"
                         class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  "
-                        placeholder="Complete name" required>
+                        placeholder="" required>
                 </div>
 
             </div>
